@@ -1,0 +1,520 @@
+{
+  "configVersion": 2,
+  "packages": [
+    {
+      "name": "_fe_analyzer_shared",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/_fe_analyzer_shared-91.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.9"
+    },
+    {
+      "name": "analyzer",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/analyzer-8.4.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.9"
+    },
+    {
+      "name": "args",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/args-2.7.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
+    },
+    {
+      "name": "async",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/async-2.13.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "boolean_selector",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/boolean_selector-2.1.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.1"
+    },
+    {
+      "name": "characters",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/characters-1.4.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "cli_config",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/cli_config-0.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "clock",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/clock-1.1.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "collection",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/collection-1.19.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "convert",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/convert-3.1.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "coverage",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/coverage-1.15.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "crypto",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/crypto-3.0.7",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "easy_localization",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/easy_localization-3.0.8",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "easy_logger",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/easy_logger-0.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "fake_async",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/fake_async-1.3.3",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
+    },
+    {
+      "name": "ffi",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/ffi-2.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.7"
+    },
+    {
+      "name": "file",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/file-7.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "flutter",
+      "rootUri": "file:///Users/aymanaomari/fvm/versions/3.38.6/packages/flutter",
+      "packageUri": "lib/",
+      "languageVersion": "3.8"
+    },
+    {
+      "name": "flutter_lints",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/flutter_lints-6.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.8"
+    },
+    {
+      "name": "flutter_localizations",
+      "rootUri": "file:///Users/aymanaomari/fvm/versions/3.38.6/packages/flutter_localizations",
+      "packageUri": "lib/",
+      "languageVersion": "3.8"
+    },
+    {
+      "name": "flutter_riverpod",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/flutter_riverpod-3.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.7"
+    },
+    {
+      "name": "flutter_test",
+      "rootUri": "file:///Users/aymanaomari/fvm/versions/3.38.6/packages/flutter_test",
+      "packageUri": "lib/",
+      "languageVersion": "3.8"
+    },
+    {
+      "name": "flutter_web_plugins",
+      "rootUri": "file:///Users/aymanaomari/fvm/versions/3.38.6/packages/flutter_web_plugins",
+      "packageUri": "lib/",
+      "languageVersion": "3.8"
+    },
+    {
+      "name": "frontend_server_client",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/frontend_server_client-4.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "glob",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/glob-2.1.3",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
+    },
+    {
+      "name": "go_router",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/go_router-17.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.9"
+    },
+    {
+      "name": "http_multi_server",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/http_multi_server-3.2.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
+      "name": "http_parser",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/http_parser-4.1.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "intl",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/intl-0.20.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
+    },
+    {
+      "name": "io",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/io-1.0.5",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "js",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/js-0.7.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.7"
+    },
+    {
+      "name": "leak_tracker",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/leak_tracker-11.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
+      "name": "leak_tracker_flutter_testing",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/leak_tracker_flutter_testing-3.0.10",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
+      "name": "leak_tracker_testing",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/leak_tracker_testing-3.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
+      "name": "lints",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/lints-6.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.8"
+    },
+    {
+      "name": "logging",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/logging-1.3.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "matcher",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/matcher-0.12.17",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "material_color_utilities",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/material_color_utilities-0.11.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "meta",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/meta-1.17.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.5"
+    },
+    {
+      "name": "mime",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/mime-2.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
+      "name": "node_preamble",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/node_preamble-2.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "package_config",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/package_config-2.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "path",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/path-1.9.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "path_provider_linux",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/path_provider_linux-2.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
+      "name": "path_provider_platform_interface",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/path_provider_platform_interface-2.1.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "path_provider_windows",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/path_provider_windows-2.3.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
+      "name": "platform",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/platform-3.1.6",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
+      "name": "plugin_platform_interface",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/plugin_platform_interface-2.1.8",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "pool",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/pool-1.5.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "pub_semver",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/pub_semver-2.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "riverpod",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/riverpod-3.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.7"
+    },
+    {
+      "name": "shared_preferences",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/shared_preferences-2.5.4",
+      "packageUri": "lib/",
+      "languageVersion": "3.9"
+    },
+    {
+      "name": "shared_preferences_android",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/shared_preferences_android-2.4.20",
+      "packageUri": "lib/",
+      "languageVersion": "3.9"
+    },
+    {
+      "name": "shared_preferences_foundation",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/shared_preferences_foundation-2.5.6",
+      "packageUri": "lib/",
+      "languageVersion": "3.9"
+    },
+    {
+      "name": "shared_preferences_linux",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/shared_preferences_linux-2.4.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
+    },
+    {
+      "name": "shared_preferences_platform_interface",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/shared_preferences_platform_interface-2.4.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
+      "name": "shared_preferences_web",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/shared_preferences_web-2.4.3",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "shared_preferences_windows",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/shared_preferences_windows-2.4.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
+    },
+    {
+      "name": "shelf",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/shelf-1.4.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "shelf_packages_handler",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/shelf_packages_handler-3.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "shelf_static",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/shelf_static-1.1.3",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
+    },
+    {
+      "name": "shelf_web_socket",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/shelf_web_socket-3.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.5"
+    },
+    {
+      "name": "sky_engine",
+      "rootUri": "file:///Users/aymanaomari/fvm/versions/3.38.6/bin/cache/pkg/sky_engine",
+      "packageUri": "lib/",
+      "languageVersion": "3.8"
+    },
+    {
+      "name": "source_map_stack_trace",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/source_map_stack_trace-2.1.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
+    },
+    {
+      "name": "source_maps",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/source_maps-0.10.13",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
+    },
+    {
+      "name": "source_span",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/source_span-1.10.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.1"
+    },
+    {
+      "name": "stack_trace",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/stack_trace-1.12.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "state_notifier",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/state_notifier-1.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "stream_channel",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/stream_channel-2.1.4",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
+    },
+    {
+      "name": "string_scanner",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/string_scanner-1.4.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.1"
+    },
+    {
+      "name": "term_glyph",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/term_glyph-1.2.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.1"
+    },
+    {
+      "name": "test",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/test-1.26.3",
+      "packageUri": "lib/",
+      "languageVersion": "3.5"
+    },
+    {
+      "name": "test_api",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/test_api-0.7.7",
+      "packageUri": "lib/",
+      "languageVersion": "3.5"
+    },
+    {
+      "name": "test_core",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/test_core-0.6.12",
+      "packageUri": "lib/",
+      "languageVersion": "3.5"
+    },
+    {
+      "name": "typed_data",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/typed_data-1.4.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.5"
+    },
+    {
+      "name": "vector_math",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/vector_math-2.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.1"
+    },
+    {
+      "name": "vm_service",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/vm_service-15.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.5"
+    },
+    {
+      "name": "watcher",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/watcher-1.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "web",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/web-1.1.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "web_socket",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/web_socket-1.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "web_socket_channel",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/web_socket_channel-3.0.3",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
+    },
+    {
+      "name": "webkit_inspection_protocol",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/webkit_inspection_protocol-1.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "xdg_directories",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/xdg_directories-1.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
+    },
+    {
+      "name": "yaml",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/yaml-3.1.3",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "your_gym_bro",
+      "rootUri": "../",
+      "packageUri": "lib/",
+      "languageVersion": "3.10"
+    }
+  ],
+  "generator": "pub",
+  "generatorVersion": "3.10.7",
+  "flutterRoot": "file:///Users/aymanaomari/fvm/versions/3.38.6",
+  "flutterVersion": "3.38.6",
+  "pubCache": "file:///Users/aymanaomari/.pub-cache"
+}
