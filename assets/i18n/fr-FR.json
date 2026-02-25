@@ -1,0 +1,14 @@
+{
+    "your_gym": "Votre Gym",
+    "onboarding_Welcome_To_Your_Gym": "Bienvenue à \nVotre Gym ",
+    "onboarding_app_name_suffix": "Bro",
+    "onboarding_tagline": "Suivez vos exercices. Découvrez-en de nouveaux. Entraînez-vous plus intelligemment.",
+    "onboarding_second_title": "Construisez de vrais ",
+    "onboarding_second_highlight": "Progrès",
+    "onboarding_second_tagline": "Enregistrez vos séances. Suivez votre évolution. Obtenez des résultats.",
+    "onboarding_next": "Suivant",
+    "onboarding_start_training": "Commencer l'entraînement",
+    "auth_signin_title_prefix": "Se ",
+    "auth_signin_title_suffix": "connecter",
+    "auth_signin_subtitle": "Salut ! Bon retour, tu nous as manqué"
+}
