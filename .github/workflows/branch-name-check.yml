@@ -13,7 +13,7 @@ jobs:
       - name: Check Branch Name
         run: |
           # Get branch name from ref
-          branch_name="${GITHUB_REF##*/}"
+          branch_name="${GITHUB_REF#refs/heads/}"
           
           # Allowed branch prefixes
           if [[ ! "$branch_name" =~ ^(bugfix|chore|docs|feat|hotfix|perf|refacto|sec|test)/[A-Za-z0-9._-]+$ ]]; then
