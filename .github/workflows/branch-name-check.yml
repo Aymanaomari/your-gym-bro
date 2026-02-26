@@ -1,0 +1,27 @@
+name: Enforce Branch Naming Convention
+
+on:
+  push:
+    branches-ignore:
+      - main
+      - develop
+
+jobs:
+  branch-name-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check Branch Name
+        run: |
+          # Get branch name from ref
+          branch_name="${GITHUB_REF#refs/heads/}"
+          
+          # Allowed branch prefixes
+          if [[ ! "$branch_name" =~ ^(bugfix|chore|docs|feat|hotfix|perf|refacto|sec|test)/[a-z0-9._-]+$ ]]; then
+            echo "❌ ERROR: Branch name '$branch_name' does not follow naming convention."
+            echo "Allowed prefixes: bugfix, chore, docs, feat, hotfix, perf, refacto, sec, test"
+            echo "Example: feat/add-login, bugfix/fix-crash, docs/update-readme"
+            exit 1
+          else
+            echo "✅ Branch name '$branch_name' is valid."
+          fi
+
