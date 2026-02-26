@@ -16,11 +16,12 @@ jobs:
           branch_name="${GITHUB_REF#refs/heads/}"
           
           # Allowed branch prefixes
-          if [[ ! "$branch_name" =~ ^(bugfix|chore|docs|feature|hotfix|performance|refactor|security|test)/[a-z0-9._-]+$ ]]; then
+          if [[ ! "$branch_name" =~ ^(bugfix|chore|docs|feat|hotfix|perf|refacto|sec|test)/[a-z0-9._-]+$ ]]; then
             echo "❌ ERROR: Branch name '$branch_name' does not follow naming convention."
-            echo "Allowed prefixes: bugfix, chore, docs, feature, hotfix, performance, refactor, security, test"
-            echo "Example: feature/add-login, bugfix/fix-crash, docs/update-readme"
+            echo "Allowed prefixes: bugfix, chore, docs, feat, hotfix, perf, refacto, sec, test"
+            echo "Example: feat/add-login, bugfix/fix-crash, docs/update-readme"
             exit 1
           else
             echo "✅ Branch name '$branch_name' is valid."
           fi
+

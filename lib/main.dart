@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
+import 'package:your_gym_bro/app/app_providers.dart';
 import 'package:your_gym_bro/core/i18n/locale_controller.dart';
-import 'package:your_gym_bro/shared/providers/local_provider.dart';
 import 'package:your_gym_bro/theme/ygb_v0_theme/ygb_v0_theme.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'routing/go_router.dart';
