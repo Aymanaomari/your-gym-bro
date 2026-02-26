@@ -1,0 +1,19 @@
+#!/usr/bin/env sh
+
+set -e
+
+if ! command -v flutter >/dev/null 2>&1; then
+  echo "flutter command not found. Install Flutter and retry."
+  exit 1
+fi
+
+REPO_ROOT="$(git rev-parse --show-toplevel)"
+cd "$REPO_ROOT"
+
+echo "Running flutter analyze..."
+flutter analyze --no-fatal-infos --no-fatal-warnings
+
+echo "Running flutter test..."
+flutter test
+
+echo "pre-commit checks passed."

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:your_gym_bro/app/app_providers.dart';
 import 'package:your_gym_bro/core/i18n/locale_controller.dart';
+import 'package:your_gym_bro/core/logger/console_logger.dart';
 import 'package:your_gym_bro/theme/ygb_v0_theme/ygb_v0_theme.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'routing/go_router.dart';
@@ -9,7 +10,7 @@ import 'routing/go_router.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await initializeInternationalization();
-
+  LoggerBootstrap.initialize();
   runApp(localizationWrapper(child: const ProviderScope(child: MainApp())));
 }
 

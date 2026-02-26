@@ -27,6 +27,4 @@ abstract interface class CoreLogger {
     Object? error,
     StackTrace? stackTrace,
   });
-
-  void listenToLogs(void Function(LogEvent log) onLog);
 }

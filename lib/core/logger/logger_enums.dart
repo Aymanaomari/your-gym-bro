@@ -4,7 +4,7 @@ enum LogLevel {
   warning('WARNING'),
   error('ERROR');
 
-  final String name;
+  final String label;
 
-  const LogLevel(this.name);
+  const LogLevel(this.label);
 }

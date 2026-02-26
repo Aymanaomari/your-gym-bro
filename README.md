@@ -53,3 +53,18 @@ Your Gym Bro aims to become a smart workout companion that adapts to the user's 
 ## 📌 Status
 
 🚧 In active development.
+
+---
+
+## ✅ Git Pre-commit Hook
+
+This repository includes a pre-commit hook that runs:
+- `flutter analyze`
+- `flutter test`
+
+Enable it once per local clone:
+
+```bash
+git config core.hooksPath .githooks
+chmod +x .githooks/pre-commit
+```
