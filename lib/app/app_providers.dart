@@ -2,6 +2,8 @@ import 'dart:ui';
 
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:your_gym_bro/core/i18n/locale_controller.dart';
+import 'package:your_gym_bro/core/logger/console_logger.dart';
+import 'package:your_gym_bro/core/logger/core_logger.dart';
 import 'package:your_gym_bro/core/storage/storage.dart';
 
 final localeControllerProvider = NotifierProvider<LocaleController, Locale>(
@@ -11,4 +13,8 @@ final localeControllerProvider = NotifierProvider<LocaleController, Locale>(
 final storageProvider = FutureProvider<Storage>((ref) async {
   final storage = await Storage.getInstance();
   return storage;
+});
+
+final loggerProvider = Provider.family<CoreLogger, String>((ref, className) {
+  return ConsoleLogger(className: className);
 });
