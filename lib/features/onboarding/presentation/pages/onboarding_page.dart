@@ -3,7 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:your_gym_bro/core/i18n/internationalization_extension.dart';
 import 'package:your_gym_bro/features/auth/presentation/pages/singin_page.dart';
-import 'package:your_gym_bro/features/onboarding/presentation/pages/providers.dart';
+import 'package:your_gym_bro/features/onboarding/presentation/providers/providers.dart';
 import 'package:your_gym_bro/features/onboarding/presentation/models/onboarding_screen_data.dart';
 import 'package:your_gym_bro/features/onboarding/presentation/providers/onboarding_view_mode.dart';
 import 'package:your_gym_bro/features/onboarding/presentation/widgets/onboarding_background_slide.dart';

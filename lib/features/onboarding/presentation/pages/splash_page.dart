@@ -5,7 +5,7 @@ import 'package:your_gym_bro/core/constants/assets.dart';
 import 'package:your_gym_bro/core/constants/spacing.dart';
 import 'package:your_gym_bro/core/i18n/internationalization_extension.dart';
 import 'package:your_gym_bro/features/auth/presentation/pages/singin_page.dart';
-import 'package:your_gym_bro/features/onboarding/presentation/pages/providers.dart';
+import 'package:your_gym_bro/features/onboarding/presentation/providers/providers.dart';
 import 'package:your_gym_bro/features/onboarding/presentation/pages/onboarding_page.dart';
 import 'package:your_gym_bro/theme/ygb_v0_theme/ygb_v0_theme.dart';
 
