@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:widgetbook/widgetbook.dart';
 import 'package:widgetbook_annotation/widgetbook_annotation.dart' as widgetbook;
-import 'package:your_gym_bro/shared/widgets/button/ygb_v0_app_text_input.dart';
+import 'package:your_gym_bro/shared/widgets/text_input/ygb_v0_app_text_input.dart';
 
 @widgetbook.UseCase(name: 'App Text Input', type: YGBV0AppTextInput)
 Widget buildYgbV0AppTextInput(BuildContext context) {
@@ -23,12 +23,52 @@ Widget buildYgbV0AppTextInput(BuildContext context) {
     description: "Whether the text input is in an error state.",
   );
 
-  return Center(
-    child: YGBV0AppTextInput(
-      hintText: hintText,
-      prefixIcon: prefixIcon,
-      isError: isError,
-      controller: TextEditingController(),
-    ),
+  return _YgbV0TextInputUseCase(
+    hintText: hintText,
+    prefixIcon: prefixIcon,
+    isError: isError,
   );
+}
+
+class _YgbV0TextInputUseCase extends StatefulWidget {
+  const _YgbV0TextInputUseCase({
+    required this.hintText,
+    required this.prefixIcon,
+    required this.isError,
+  });
+
+  final String hintText;
+  final IconData? prefixIcon;
+  final bool isError;
+
+  @override
+  State<_YgbV0TextInputUseCase> createState() => _YgbV0TextInputUseCaseState();
+}
+
+class _YgbV0TextInputUseCaseState extends State<_YgbV0TextInputUseCase> {
+  late final TextEditingController _controller;
+
+  @override
+  void initState() {
+    super.initState();
+    _controller = TextEditingController();
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: YGBV0AppTextInput(
+        hintText: widget.hintText,
+        prefixIcon: widget.prefixIcon,
+        isError: widget.isError,
+        controller: _controller,
+      ),
+    );
+  }
 }

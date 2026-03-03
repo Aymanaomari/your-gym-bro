@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:your_gym_bro/shared/widgets/button/ygb_v0_app_text_input.dart';
+import 'package:your_gym_bro/shared/widgets/text_input/ygb_v0_app_text_input.dart';
 import 'package:your_gym_bro/theme/ygb_v0_theme/ygb_v0_theme.dart';
 
 void main() {
