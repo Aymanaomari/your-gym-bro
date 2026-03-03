@@ -1,0 +1,32 @@
+{
+  "name": "your_gym_bro",
+  "version": "1.0.0",
+  "description": "Your Gym Bro is a Flutter mobile application that helps gym trainers and athletes organize, optimize, and improve their workouts.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "flutter test",
+    "precommit:check": "flutter analyze && flutter test",
+    "prepush:check": "flutter test",
+    "commitmsg:check": "sh .husky/scripts/validate-commit-msg.sh",
+    "prepare": "husky"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aymanaomari/your-gym-bro.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Aymanaomari/your-gym-bro/issues"
+  },
+  "homepage": "https://github.com/Aymanaomari/your-gym-bro#readme",
+  "devDependencies": {
+    "husky": "^9.1.7"
+  }
+}
