@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:your_gym_bro/core/constants/assets.dart';
 import 'package:your_gym_bro/core/constants/spacing.dart';
 import 'package:your_gym_bro/core/i18n/internationalization_extension.dart';
+import 'package:your_gym_bro/features/auth/presentation/pages/singin_page.dart';
+import 'package:your_gym_bro/features/onboarding/presentation/pages/providers.dart';
 import 'package:your_gym_bro/features/onboarding/presentation/pages/onboarding_page.dart';
 import 'package:your_gym_bro/theme/ygb_v0_theme/ygb_v0_theme.dart';
 
-class SplashPage extends StatefulWidget {
+class SplashPage extends ConsumerStatefulWidget {
   const SplashPage({super.key});
 
   static const String routeName = "splash";
@@ -14,10 +17,10 @@ class SplashPage extends StatefulWidget {
   static const String routeDisplayName = "Splash";
 
   @override
-  State<SplashPage> createState() => _SplashPageState();
+  ConsumerState<SplashPage> createState() => _SplashPageState();
 }
 
-class _SplashPageState extends State<SplashPage>
+class _SplashPageState extends ConsumerState<SplashPage>
     with SingleTickerProviderStateMixin {
   late final AnimationController _fadeController;
   late final Animation<double> _fadeAnimation;
@@ -43,8 +46,22 @@ class _SplashPageState extends State<SplashPage>
     _fadeController.forward();
   }
 
-  void _onFadeInCompleted() {
-    context.pushReplacement(OnboardingPage.routePath);
+  Future<void> _onFadeInCompleted() async {
+    final isOnboardingCompletedUseCase = await ref.read(
+      isOnboardingCompletedUseCaseProvider.future,
+    );
+    final isOnboardingCompleted = await isOnboardingCompletedUseCase();
+
+    if (!mounted) {
+      return;
+    }
+
+    if (isOnboardingCompleted) {
+      context.go(SinginPage.routePath);
+      return;
+    }
+
+    context.go(OnboardingPage.routePath);
   }
 
   @override

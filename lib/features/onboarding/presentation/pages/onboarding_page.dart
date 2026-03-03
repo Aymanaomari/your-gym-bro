@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 import 'package:your_gym_bro/core/i18n/internationalization_extension.dart';
+import 'package:your_gym_bro/features/auth/presentation/pages/singin_page.dart';
+import 'package:your_gym_bro/features/onboarding/presentation/pages/providers.dart';
 import 'package:your_gym_bro/features/onboarding/presentation/models/onboarding_screen_data.dart';
 import 'package:your_gym_bro/features/onboarding/presentation/providers/onboarding_view_mode.dart';
 import 'package:your_gym_bro/features/onboarding/presentation/widgets/onboarding_background_slide.dart';
@@ -20,6 +23,26 @@ class OnboardingPage extends ConsumerStatefulWidget {
 }
 
 class _OnboardingPageState extends ConsumerState<OnboardingPage> {
+  Future<void> _onButtonPressed({required bool isLastPage}) async {
+    final onboardingViewModel = ref.read(onboardingViewModelProvider.notifier);
+
+    if (!isLastPage) {
+      await onboardingViewModel.onContinuePressed();
+      return;
+    }
+
+    final markOnboardingAsCompletedUseCase = await ref.read(
+      markOnboardingAsCompletedUseCaseProvider.future,
+    );
+    await markOnboardingAsCompletedUseCase();
+
+    if (!mounted) {
+      return;
+    }
+
+    context.go(SinginPage.routePath);
+  }
+
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
@@ -72,12 +95,7 @@ class _OnboardingPageState extends ConsumerState<OnboardingPage> {
                   ),
                   SizedBox(height: theme.ygbSpacing.lg),
                   YgbV0AppButton(
-                    onPressed: () {
-                      if (isLastPage) {
-                        return;
-                      }
-                      onboardingViewModel.onContinuePressed();
-                    },
+                    onPressed: () => _onButtonPressed(isLastPage: isLastPage),
                     text: context.tr(currentPageData.buttonTextKey),
                   ),
                   SizedBox(height: theme.ygbSpacing.md),
