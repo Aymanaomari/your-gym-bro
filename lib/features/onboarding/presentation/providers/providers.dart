@@ -1,48 +1,35 @@
-import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:your_gym_bro/app/app_providers.dart';
+import 'package:your_gym_bro/features/onboarding/data/datasources/onboarding_datasource.dart';
+import 'package:your_gym_bro/features/onboarding/data/repositories/onboarding_repository_imp.dart';
+import 'package:your_gym_bro/features/onboarding/domain/repositories/onboarding_repository.dart';
+import 'package:your_gym_bro/features/onboarding/domain/usecases/is_onboarding_completed_use_case.dart';
+import 'package:your_gym_bro/features/onboarding/domain/usecases/mark_onboarding_as_completed_use_case.dart';
 
-class OnboardingViewState {
-  const OnboardingViewState({this.currentPage = 0, this.totalPages = 2});
+final onboardingDatasourceProvider = FutureProvider<OnboardingDatasource>((
+  ref,
+) async {
+  final storage = await ref.watch(storageProvider.future);
+  final logger = ref.read(loggerProvider('OnboardingDatasource'));
 
-  final int currentPage;
-  final int totalPages;
+  return OnboardingDatasource(storage: storage, logger: logger);
+});
 
-  OnboardingViewState copyWith({int? currentPage, int? totalPages}) {
-    return OnboardingViewState(
-      currentPage: currentPage ?? this.currentPage,
-      totalPages: totalPages ?? this.totalPages,
-    );
-  }
-}
+final onboardingRepositoryProvider = FutureProvider<OnboardingRepository>((
+  ref,
+) async {
+  final datasource = await ref.watch(onboardingDatasourceProvider.future);
+  return OnboardingRepositoryImp(datasource);
+});
 
-class OnboardingViewModel extends Notifier<OnboardingViewState> {
-  late final PageController pageController;
+final isOnboardingCompletedUseCaseProvider =
+    FutureProvider<IsOnboardingCompletedUseCase>((ref) async {
+      final repository = await ref.watch(onboardingRepositoryProvider.future);
+      return IsOnboardingCompletedUseCase(repository);
+    });
 
-  @override
-  OnboardingViewState build() {
-    pageController = PageController();
-    ref.onDispose(pageController.dispose);
-
-    return const OnboardingViewState();
-  }
-
-  void onPageChanged(int index) {
-    state = state.copyWith(currentPage: index);
-  }
-
-  Future<void> onContinuePressed() async {
-    if (state.currentPage >= state.totalPages - 1) {
-      return;
-    }
-
-    await pageController.nextPage(
-      duration: const Duration(milliseconds: 300),
-      curve: Curves.easeInOut,
-    );
-  }
-}
-
-final onboardingViewModelProvider =
-    NotifierProvider.autoDispose<OnboardingViewModel, OnboardingViewState>(
-      OnboardingViewModel.new,
-    );
+final markOnboardingAsCompletedUseCaseProvider =
+    FutureProvider<MarkOnboardingAsCompletedUseCase>((ref) async {
+      final repository = await ref.watch(onboardingRepositoryProvider.future);
+      return MarkOnboardingAsCompletedUseCase(repository);
+    });

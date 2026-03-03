@@ -55,11 +55,6 @@ class YgbV0AppInputField extends StatelessWidget {
     final borderColor = theme.ygbColors.primary100;
     final focusedBorderColor = theme.ygbColors.primary500;
 
-    final border = OutlineInputBorder(
-      borderRadius: BorderRadius.circular(12),
-      borderSide: BorderSide(color: borderColor),
-    );
-
     return TextFormField(
       controller: controller,
       focusNode: focusNode,

@@ -6,6 +6,8 @@ import 'package:your_gym_bro/theme/ygb_v0_theme/ygb_v0_text_theme.dart';
 class YGBV0ThemeLight {
   ThemeData get themeData {
     return ThemeData(
+      useMaterial3: true,
+      scaffoldBackgroundColor: const Color(0xFF164264),
       textTheme: YgbV0TextTheme().textTheme,
       extensions: <ThemeExtension<dynamic>>[
         YGBV0ColorTheme(
