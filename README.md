@@ -53,3 +53,18 @@ Your Gym Bro aims to become a smart workout companion that adapts to the user's 
 ## 📌 Status
 
 🚧 In active development.
+
+---
+
+## 🪝 Git Hooks (Husky)
+
+This repository uses Husky to run checks before each commit.
+
+- Install Node dependencies after cloning: npm install
+- On each commit, Husky runs:
+	- flutter analyze
+	- flutter test
+- Commit message must match:
+	- (feat|chore|performace|performance|bugfix|fix|sec): [YGB-x] - Description
+- On each push, Husky runs:
+	- flutter test
