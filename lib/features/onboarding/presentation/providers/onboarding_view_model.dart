@@ -22,7 +22,6 @@ class OnboardingViewModel extends Notifier<OnboardingViewState> {
   OnboardingViewState build() {
     pageController = PageController();
     ref.onDispose(pageController.dispose);
-
     return const OnboardingViewState();
   }
 
@@ -41,8 +40,3 @@ class OnboardingViewModel extends Notifier<OnboardingViewState> {
     );
   }
 }
-
-final onboardingViewModelProvider =
-    NotifierProvider.autoDispose<OnboardingViewModel, OnboardingViewState>(
-      OnboardingViewModel.new,
-    );
