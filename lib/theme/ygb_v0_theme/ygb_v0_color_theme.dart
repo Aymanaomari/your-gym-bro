@@ -13,6 +13,7 @@ class YGBV0ColorTheme extends ThemeExtension<YGBV0ColorTheme> {
     required this.primary700,
     required this.primary800,
     required this.primary900,
+    required this.error,
   });
 
   final Color primary50;
@@ -25,6 +26,7 @@ class YGBV0ColorTheme extends ThemeExtension<YGBV0ColorTheme> {
   final Color primary700;
   final Color primary800;
   final Color primary900;
+  final Color error;
 
   static const YGBV0ColorTheme dark = YGBV0ColorTheme(
     primary50: Color(0xFF8E8E8E),
@@ -37,6 +39,7 @@ class YGBV0ColorTheme extends ThemeExtension<YGBV0ColorTheme> {
     primary700: Color(0xFF1E1E1E),
     primary800: Color(0xFF171717),
     primary900: Color(0xFF101010),
+    error: Color(0xFFCC3300),
   );
 
   Map<int, Color> get primaryScale => <int, Color>{
@@ -64,6 +67,7 @@ class YGBV0ColorTheme extends ThemeExtension<YGBV0ColorTheme> {
     Color? primary700,
     Color? primary800,
     Color? primary900,
+    Color? error,
   }) {
     return YGBV0ColorTheme(
       primary50: primary50 ?? this.primary50,
@@ -76,6 +80,7 @@ class YGBV0ColorTheme extends ThemeExtension<YGBV0ColorTheme> {
       primary700: primary700 ?? this.primary700,
       primary800: primary800 ?? this.primary800,
       primary900: primary900 ?? this.primary900,
+      error: error ?? this.error,
     );
   }
 
@@ -96,6 +101,7 @@ class YGBV0ColorTheme extends ThemeExtension<YGBV0ColorTheme> {
       primary700: Color.lerp(primary700, other.primary700, t) ?? primary700,
       primary800: Color.lerp(primary800, other.primary800, t) ?? primary800,
       primary900: Color.lerp(primary900, other.primary900, t) ?? primary900,
+      error: Color.lerp(error, other.error, t) ?? error,
     );
   }
 }

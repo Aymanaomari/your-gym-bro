@@ -8,6 +8,12 @@
       "languageVersion": "3.9"
     },
     {
+      "name": "accessibility_tools",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/accessibility_tools-2.8.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.9"
+    },
+    {
       "name": "analyzer",
       "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/analyzer-8.4.1",
       "packageUri": "lib/",
@@ -128,6 +134,12 @@
       "languageVersion": "3.9"
     },
     {
+      "name": "device_frame_plus",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/device_frame_plus-1.5.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
       "name": "easy_localization",
       "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/easy_localization-3.0.8",
       "packageUri": "lib/",
@@ -236,6 +248,12 @@
       "languageVersion": "3.4"
     },
     {
+      "name": "inspector",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/inspector-3.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "intl",
       "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/intl-0.20.2",
       "packageUri": "lib/",
@@ -320,6 +338,12 @@
       "languageVersion": "3.7"
     },
     {
+      "name": "nested",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/nested-1.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "node_preamble",
       "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/node_preamble-2.0.2",
       "packageUri": "lib/",
@@ -384,6 +408,12 @@
       "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/pubspec_parse-1.5.0",
       "packageUri": "lib/",
       "languageVersion": "3.6"
+    },
+    {
+      "name": "resizable_widget",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/resizable_widget-1.0.5",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
     },
     {
       "name": "riverpod",
@@ -548,6 +578,54 @@
       "languageVersion": "3.5"
     },
     {
+      "name": "url_launcher",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/url_launcher-6.3.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.6"
+    },
+    {
+      "name": "url_launcher_android",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/url_launcher_android-6.3.28",
+      "packageUri": "lib/",
+      "languageVersion": "3.9"
+    },
+    {
+      "name": "url_launcher_ios",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/url_launcher_ios-6.4.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.10"
+    },
+    {
+      "name": "url_launcher_linux",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/url_launcher_linux-3.2.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.8"
+    },
+    {
+      "name": "url_launcher_macos",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/url_launcher_macos-3.2.5",
+      "packageUri": "lib/",
+      "languageVersion": "3.9"
+    },
+    {
+      "name": "url_launcher_platform_interface",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/url_launcher_platform_interface-2.3.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.1"
+    },
+    {
+      "name": "url_launcher_web",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/url_launcher_web-2.4.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.10"
+    },
+    {
+      "name": "url_launcher_windows",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/url_launcher_windows-3.1.5",
+      "packageUri": "lib/",
+      "languageVersion": "3.8"
+    },
+    {
       "name": "vector_math",
       "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/vector_math-2.2.0",
       "packageUri": "lib/",
@@ -588,6 +666,18 @@
       "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/webkit_inspection_protocol-1.2.1",
       "packageUri": "lib/",
       "languageVersion": "3.0"
+    },
+    {
+      "name": "widgetbook",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/widgetbook-3.22.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.10"
+    },
+    {
+      "name": "widgetbook_annotation",
+      "rootUri": "file:///Users/aymanaomari/.pub-cache/hosted/artifactory.dt.renault.com%2547artifactory%2547api%2547pub%2547pub-ccx-irn76318%2547/widgetbook_annotation-3.11.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.10"
     },
     {
       "name": "xdg_directories",

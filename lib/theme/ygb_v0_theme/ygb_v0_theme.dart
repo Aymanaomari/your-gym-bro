@@ -21,6 +21,7 @@ class YGBV0ThemeLight {
           primary700: const Color(0xFF125B92),
           primary800: const Color(0xFF125B92),
           primary900: const Color(0xFF164264),
+          error: const Color(0xFFCC3300),
         ),
         YGBV0SpacingTheme(),
       ],
