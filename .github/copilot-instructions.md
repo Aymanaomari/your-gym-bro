@@ -125,3 +125,12 @@
 
 - Must support multi-language.
 - All strings must be externalized.
+
+---
+
+## Git & Commit Rules
+
+- Every commit message must follow `type: [YGB-XX] - description`.
+- `type` is one of the standard conventional prefixes (feat, fix, chore, docs, refactor, test, ci).
+- Replace `YGB-XX` with the relevant ticket identifier; if none exists use `YGB-000`.
+- Keep descriptions concise (<= 60 characters) and written in the imperative mood.
