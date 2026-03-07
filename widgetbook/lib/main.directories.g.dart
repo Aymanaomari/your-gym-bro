@@ -13,6 +13,8 @@
 import 'package:widgetbook/widgetbook.dart' as _widgetbook;
 import 'package:widgetbook_workspace/ygb_v0/ygb_v0_app_button.dart'
     as _widgetbook_workspace_ygb_v0_ygb_v0_app_button;
+import 'package:widgetbook_workspace/ygb_v0/ygb_v0_app_link.dart'
+    as _widgetbook_workspace_ygb_v0_ygb_v0_app_link;
 import 'package:widgetbook_workspace/ygb_v0/ygb_v0_app_text_input.dart'
     as _widgetbook_workspace_ygb_v0_ygb_v0_app_text_input;
 
@@ -36,8 +38,28 @@ final directories = <_widgetbook.WidgetbookNode>[
                   ),
                 ],
               ),
+            ],
+          ),
+          _widgetbook.WidgetbookFolder(
+            name: 'link',
+            children: [
               _widgetbook.WidgetbookComponent(
-                name: 'YgbV0AppTextInput',
+                name: 'YgbV0AppLink',
+                useCases: [
+                  _widgetbook.WidgetbookUseCase(
+                    name: 'App Button',
+                    builder: _widgetbook_workspace_ygb_v0_ygb_v0_app_link
+                        .buildYgbV0AppLink,
+                  ),
+                ],
+              ),
+            ],
+          ),
+          _widgetbook.WidgetbookFolder(
+            name: 'text_input',
+            children: [
+              _widgetbook.WidgetbookComponent(
+                name: 'YGBV0AppTextInput',
                 useCases: [
                   _widgetbook.WidgetbookUseCase(
                     name: 'App Text Input',
