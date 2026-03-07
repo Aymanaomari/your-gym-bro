@@ -22,7 +22,12 @@ class WidgetbookApp extends StatelessWidget {
         ViewportAddon(Viewports.all),
         MaterialThemeAddon(
           themes: [
-            WidgetbookTheme(name: 'Light', data: YGBV0ThemeLight().themeData),
+            WidgetbookTheme(
+              name: 'Light',
+              data: YGBV0ThemeLight().themeData.copyWith(
+                scaffoldBackgroundColor: Color(0XFF000000),
+              ),
+            ),
           ],
         ),
       ],
