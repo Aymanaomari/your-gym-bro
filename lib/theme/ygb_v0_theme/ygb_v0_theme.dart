@@ -7,8 +7,14 @@ class YGBV0ThemeLight {
   ThemeData get themeData {
     return ThemeData(
       useMaterial3: true,
+      colorSchemeSeed: const Color(0xFF4BABE5),
       scaffoldBackgroundColor: const Color(0xFF164264),
       textTheme: YgbV0TextTheme().textTheme,
+      textSelectionTheme: const TextSelectionThemeData(
+        cursorColor: Color(0xFF2493D7),
+        selectionColor: Color(0x662493D7),
+        selectionHandleColor: Color(0xFF2493D7),
+      ),
       extensions: <ThemeExtension<dynamic>>[
         YGBV0ColorTheme(
           primary50: const Color(0xFFF1F8FE),
