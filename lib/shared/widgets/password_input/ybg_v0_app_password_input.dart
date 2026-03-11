@@ -7,6 +7,7 @@ class YbgV0AppPasswordInput extends StatefulWidget {
     required this.hintText,
     this.prefixIcon,
     this.isError = false,
+    this.onChange,
     required this.controller,
   });
 
@@ -14,6 +15,7 @@ class YbgV0AppPasswordInput extends StatefulWidget {
   final IconData? prefixIcon;
   final bool? isError;
   final TextEditingController controller;
+  final void Function(String)? onChange;
 
   @override
   State<YbgV0AppPasswordInput> createState() => _YbgV0AppPasswordInputState();
@@ -63,6 +65,7 @@ class _YbgV0AppPasswordInputState extends State<YbgV0AppPasswordInput> {
           );
 
     return TextField(
+      onChanged: widget.onChange,
       focusNode: _focusNode,
       obscureText: _obscureText,
       style: TextStyle(color: theme.ygbColors.primary50),

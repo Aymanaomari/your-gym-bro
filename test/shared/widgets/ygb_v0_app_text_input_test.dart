@@ -59,6 +59,46 @@ void main() {
     expect(enabledBorder?.borderSide.color, equals(theme.ygbColors.error));
     expect(focusedBorder?.borderSide.color, equals(theme.ygbColors.error));
   });
+
+  testWidgets('onchange callback is invoked when text changes', (tester) async {
+    final controller = TextEditingController();
+    addTearDown(controller.dispose);
+    String? capturedValue;
+
+    await tester.pumpWidget(
+      _wrapWithTheme(
+        theme,
+        YGBV0AppTextInput(
+          hintText: 'Email',
+          controller: controller,
+          onchange: (value) => capturedValue = value,
+        ),
+      ),
+    );
+
+    await tester.enterText(find.byType(TextField), 'hello@example.com');
+    expect(capturedValue, equals('hello@example.com'));
+  });
+
+  testWidgets('onchange is not required and defaults to null', (tester) async {
+    final controller = TextEditingController();
+    addTearDown(controller.dispose);
+
+    await tester.pumpWidget(
+      _wrapWithTheme(
+        theme,
+        YGBV0AppTextInput(
+          hintText: 'Email',
+          controller: controller,
+        ),
+      ),
+    );
+
+    // Entering text must not throw when onchange is null
+    await tester.enterText(find.byType(TextField), 'abc');
+    await tester.pumpAndSettle();
+    expect(find.byType(TextField), findsOneWidget);
+  });
 }
 
 Widget _wrapWithTheme(ThemeData theme, Widget child) {

@@ -202,6 +202,46 @@ void main() {
 
     expect(find.text('Enter your password'), findsOneWidget);
   });
+
+  testWidgets('onChange callback is invoked when text changes', (tester) async {
+    final controller = TextEditingController();
+    addTearDown(controller.dispose);
+    String? capturedValue;
+
+    await tester.pumpWidget(
+      _wrapWithTheme(
+        theme,
+        YbgV0AppPasswordInput(
+          hintText: 'Password',
+          controller: controller,
+          onChange: (value) => capturedValue = value,
+        ),
+      ),
+    );
+
+    await tester.enterText(find.byType(TextField), 'secret123');
+    expect(capturedValue, equals('secret123'));
+  });
+
+  testWidgets('onChange is not required and defaults to null', (tester) async {
+    final controller = TextEditingController();
+    addTearDown(controller.dispose);
+
+    await tester.pumpWidget(
+      _wrapWithTheme(
+        theme,
+        YbgV0AppPasswordInput(
+          hintText: 'Password',
+          controller: controller,
+        ),
+      ),
+    );
+
+    // Entering text must not throw when onChange is null
+    await tester.enterText(find.byType(TextField), 'abc');
+    await tester.pumpAndSettle();
+    expect(find.byType(TextField), findsOneWidget);
+  });
 }
 
 Widget _wrapWithTheme(ThemeData theme, Widget child) {
