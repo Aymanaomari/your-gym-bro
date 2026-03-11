@@ -7,6 +7,7 @@ class YGBV0AppTextInput extends StatefulWidget {
     required this.hintText,
     this.prefixIcon,
     this.isError = false,
+    this.onchange,
     required this.controller,
   });
 
@@ -14,6 +15,7 @@ class YGBV0AppTextInput extends StatefulWidget {
   final IconData? prefixIcon;
   final bool? isError;
   final TextEditingController controller;
+  final void Function(String)? onchange;
 
   @override
   State<YGBV0AppTextInput> createState() => _YgbV0AppTextInputState();
@@ -63,6 +65,7 @@ class _YgbV0AppTextInputState extends State<YGBV0AppTextInput> {
 
     return TextField(
       focusNode: _focusNode,
+      onChanged: widget.onchange,
       style: TextStyle(color: theme.ygbColors.primary50),
       decoration: InputDecoration(
         isDense: true,
