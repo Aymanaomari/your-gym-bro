@@ -1,0 +1,18 @@
+name: ygb_sdk
+
+packages: 
+  - packages/**
+  - apps/**
+
+scripts:
+  analyze:
+    run: melos exec -- flutter analyze
+    description: Run static analysis across the entire codebase.
+
+  test:
+    run: melos exec --dir-exists="test" -- flutter test
+    description: Run unit tests in all packages that possess a test directory.
+  
+
+
+  
