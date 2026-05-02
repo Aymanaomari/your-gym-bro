@@ -30,6 +30,7 @@ class YgbV0AppButton extends StatelessWidget {
       hoverElevation: baseElevation,
       highlightElevation: pressedElevation,
       disabledElevation: 0,
+      minWidth: double.infinity,
 
       color: outlined
           ? Colors.transparent

@@ -10,6 +10,7 @@ workspace:
   - packages/core/core
   - packages/core/core_cache
   - packages/core/core_internationalization
+  - packages/core/core_di
   - packages/ygb_sdk  
   - packages/design_system
   - packages/modules/user_connection

@@ -77,12 +77,12 @@ final directories = <_widgetbook.WidgetbookNode>[
         name: 'password_input',
         children: [
           _widgetbook.WidgetbookComponent(
-            name: 'YbgV0AppPasswordInput',
+            name: 'YGBV0AppPasswordInput',
             useCases: [
               _widgetbook.WidgetbookUseCase(
                 name: 'App Password Input',
                 builder: _widgetbook_workspace_ygb_v0_ygb_v0_app_password_input
-                    .buildYbgV0AppPasswordInput,
+                    .buildYGBV0AppPasswordInput,
               ),
             ],
           ),

@@ -5,11 +5,11 @@ import 'package:user_connection/presentation/pages/on_boarding_page.dart';
 class OnboardingFactory {
   OnboardingFactory();
 
-  Widget splashPage({VoidCallback? onCompleted}) {
+  Widget splashPage({ValueChanged<bool>? onCompleted}) {
     return SplashPage(onCompleted: onCompleted);
   }
 
-  Widget onboardingPage() {
-    return OnBoardingPage();
+  Widget onboardingPage({ValueChanged<bool>? onCompleted}) {
+    return OnBoardingPage(onCompleted: onCompleted);
   }
 }

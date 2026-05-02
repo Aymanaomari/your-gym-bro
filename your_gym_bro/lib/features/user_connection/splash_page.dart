@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:ygb_sdk/ygb_sdk.dart';
 import 'package:your_gym_bro/features/user_connection/onboarding_page.dart';
+import 'package:your_gym_bro/features/user_connection/signin_page.dart';
 
 class SplashPage extends StatefulWidget {
   const SplashPage({super.key});
@@ -18,7 +19,11 @@ class _SplashPageState extends State<SplashPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: OnboardingFactory().splashPage(
-        onCompleted: () {
+        onCompleted: (isOnboardingPassed) {
+          if (isOnboardingPassed) {
+            context.goNamed(SigninPage.routeName);
+            return;
+          }
           context.goNamed(OnboardingPage.routeName);
         },
       ),

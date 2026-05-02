@@ -7,7 +7,8 @@ abstract class OnboardingDatasource {
 }
 
 class OnboardingDatasourceImpl implements OnboardingDatasource {
-  OnboardingDatasourceImpl({required this.cache});
+  OnboardingDatasourceImpl({CoreCache? cache})
+    : cache = cache ?? CoreDIResolver.getInstance().resolve<CoreCache>();
 
   final CoreCache cache;
 

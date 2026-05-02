@@ -11,8 +11,9 @@ Widget buildYgbV0AppButton(BuildContext context) {
     description: "The message displayed in the SnackBar.",
   );
 
-  final variant = context.knobs.object.segmented(
+  final variant = context.knobs.object.dropdown(
     label: 'Variant',
+    labelBuilder: (value) => value.name,
     options: SnackBarType.values,
     description: "The style variant of the SnackBar.",
   );

@@ -18,11 +18,15 @@ class LocaleController extends ChangeNotifier {
 
 Future<void> initializeInternationalization({
   required String translationsPath,
+  Locale? startLocale,
 }) {
   print(
-    'Initializing internationalization with translations path: $translationsPath',
+    'Initializing internationalization with translations path: $translationsPath and start locale: $startLocale',
   );
-  return InternationalizationCore.init(translationsPath: translationsPath);
+  return InternationalizationCore.init(
+    translationsPath: translationsPath,
+    startLocale: startLocale,
+  );
 }
 
 Widget localizationWrapper({required Widget child}) {

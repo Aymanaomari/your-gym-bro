@@ -15,11 +15,14 @@ class YGBV0ThemeDark {
         selectionColor: Color(0x664BABE5),
         selectionHandleColor: Color(0xFF4BABE5),
       ),
-      appBarTheme: const AppBarTheme(
-        backgroundColor: Color(0xFF171717),
+      appBarTheme: AppBarTheme(
+        backgroundColor: const Color(0xFF171717),
         foregroundColor: Colors.white,
         elevation: 0,
         toolbarHeight: 60,
+        actionsPadding: EdgeInsets.symmetric(
+          horizontal: YGBV0SpacingTheme().xxl,
+        ),
       ),
       extensions: <ThemeExtension<dynamic>>[
         const YGBV0ColorTheme(
@@ -33,7 +36,19 @@ class YGBV0ThemeDark {
           primary700: Color(0xFF1E1E1E),
           primary800: Color(0xFF171717),
           primary900: Color(0xFF101010),
+          neutral50: Color(0xFFF9FAFB),
+          neutral100: Color(0xFFF2F4F7),
+          neutral200: Color(0xFFE4E7EB),
+          neutral300: Color(0xFFD0D5DD),
+          neutral400: Color(0xFF98A2B3),
+          neutral500: Color(0xFF667085),
+          neutral600: Color(0xFF475467),
+          neutral700: Color(0xFF344054),
+          neutral800: Color(0xFF1D2939),
+          neutral900: Color(0xFF10161E),
           error: Color(0xFFCC3300),
+          warning: Color(0xFFFF9F43),
+          success: Color(0xFF28C76F),
         ),
         YGBV0SpacingTheme(),
         YgbV0RadiusTheme(),

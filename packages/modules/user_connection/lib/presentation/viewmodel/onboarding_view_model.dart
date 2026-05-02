@@ -1,53 +1,60 @@
 import 'package:flutter/material.dart';
 import 'package:user_connection/domain/entities/onboarding_content.dart';
+import 'package:user_connection/domain/usecases/is_onboarding_completed.dart';
+import 'package:user_connection/domain/usecases/mark_onboarding_completed.dart';
 
-class OnboardingViewModel extends InheritedWidget {
+class OnboardingViewModel {
   OnboardingViewModel({
-    super.key,
-    required super.child,
-    this.currentPageIndex = 0,
+    required this.isOnboardingCompletedUseCase,
+    required this.markOnboardingAsCompletedUseCase,
     List<OnboardingContent>? onboardingBackgrounds,
   }) : onboardingBackgrounds = onboardingBackgrounds ?? _defaultBackgrounds();
+
+  final IsOnboardingCompleted isOnboardingCompletedUseCase;
+  final MarkOnboardingAsCompleted markOnboardingAsCompletedUseCase;
+
+  final List<OnboardingContent> onboardingBackgrounds;
+
+  /// STATE
+  final ValueNotifier<int> currentPageIndex = ValueNotifier(0);
+  final ValueNotifier<bool?> isCompleted = ValueNotifier(null);
 
   static List<OnboardingContent> _defaultBackgrounds() {
     return [
       OnboardingContent(
-        title: 'onboarding_title_1',
-        description: 'onboarding_description_1',
+        titleKey: 'onboarding_Welcome_To_Your_Gym',
+        descriptionKey: 'onboarding_tagline',
         imagePath: 'assets/images/onboarding/onboarding-bg-1.png',
+        buttonKey: 'onboarding_next',
+        highlightedTitleKey: 'onboarding_app_name_suffix',
       ),
       OnboardingContent(
-        title: 'onboarding_title_2',
-        description: 'onboarding_description_2',
+        titleKey: 'onboarding_second_title',
+        descriptionKey: 'onboarding_second_tagline',
         imagePath: 'assets/images/onboarding/onboarding-bg-2.png',
+        buttonKey: 'onboarding_start_training',
+        highlightedTitleKey: 'onboarding_second_highlight',
       ),
     ];
   }
 
-  final int currentPageIndex;
-  final List<OnboardingContent> onboardingBackgrounds;
+  /// ACTIONS
 
-  /// Access the OnboardingViewModel from the widget tree
-  static OnboardingViewModel of(BuildContext context) {
-    final result = context
-        .dependOnInheritedWidgetOfExactType<OnboardingViewModel>();
-    assert(result != null, 'OnboardingViewModel not found in context');
-    return result!;
+  void setPage(int index) {
+    currentPageIndex.value = index;
   }
 
-  /// Create an updated copy with new page index
-  OnboardingViewModel copyWith({int? currentPageIndex}) {
-    return OnboardingViewModel(
-      currentPageIndex: currentPageIndex ?? this.currentPageIndex,
-      onboardingBackgrounds: onboardingBackgrounds,
-      child: child,
-    );
+  Future<void> loadOnboardingStatus() async {
+    isCompleted.value = await isOnboardingCompletedUseCase();
   }
 
-  @override
-  bool updateShouldNotify(covariant InheritedWidget oldWidget) {
-    if (oldWidget is! OnboardingViewModel) return false;
-    return oldWidget.currentPageIndex != currentPageIndex ||
-        oldWidget.onboardingBackgrounds != onboardingBackgrounds;
+  Future<void> completeOnboarding() async {
+    await markOnboardingAsCompletedUseCase();
+    isCompleted.value = true;
+  }
+
+  void dispose() {
+    currentPageIndex.dispose();
+    isCompleted.dispose();
   }
 }

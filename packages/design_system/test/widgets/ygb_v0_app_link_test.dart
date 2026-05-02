@@ -16,12 +16,12 @@ Widget _wrapWithTheme(ThemeData theme, Widget child) {
 void main() {
   final theme = YGBV0ThemeLight().themeData;
 
-  group('YgbV0AppLink', () {
+  group('YGBV0AppLink', () {
     testWidgets('displays the provided text', (tester) async {
       await tester.pumpWidget(
         _wrapWithTheme(
           theme,
-          YgbV0AppLink(
+          YGBV0AppLink(
             type: LinkStyleVariant.primary,
             text: 'Sign up',
             onPressed: () {},
@@ -36,7 +36,7 @@ void main() {
       await tester.pumpWidget(
         _wrapWithTheme(
           theme,
-          YgbV0AppLink(
+          YGBV0AppLink(
             type: LinkStyleVariant.primary,
             text: 'Link',
             onPressed: () {},
@@ -52,7 +52,7 @@ void main() {
       await tester.pumpWidget(
         _wrapWithTheme(
           theme,
-          YgbV0AppLink(
+          YGBV0AppLink(
             type: LinkStyleVariant.secondary,
             text: 'Link',
             onPressed: () {},
@@ -68,7 +68,7 @@ void main() {
       await tester.pumpWidget(
         _wrapWithTheme(
           theme,
-          YgbV0AppLink(
+          YGBV0AppLink(
             type: LinkStyleVariant.danger,
             text: 'Delete',
             onPressed: () {},
@@ -86,7 +86,7 @@ void main() {
       await tester.pumpWidget(
         _wrapWithTheme(
           theme,
-          const YgbV0AppLink(type: LinkStyleVariant.primary, text: 'Disabled'),
+          const YGBV0AppLink(type: LinkStyleVariant.primary, text: 'Disabled'),
         ),
       );
 
@@ -100,7 +100,7 @@ void main() {
       await tester.pumpWidget(
         _wrapWithTheme(
           theme,
-          YgbV0AppLink(
+          YGBV0AppLink(
             type: LinkStyleVariant.primary,
             text: 'Tap me',
             onPressed: () => tapped = true,
@@ -118,7 +118,7 @@ void main() {
       await tester.pumpWidget(
         _wrapWithTheme(
           theme,
-          YgbV0AppLink(
+          YGBV0AppLink(
             type: LinkStyleVariant.primary,
             text: 'Underlined',
             onPressed: () {},
@@ -136,7 +136,7 @@ void main() {
       await tester.pumpWidget(
         _wrapWithTheme(
           theme,
-          YgbV0AppLink(
+          YGBV0AppLink(
             type: LinkStyleVariant.primary,
             text: 'No underline',
             isUnderlined: false,

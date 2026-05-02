@@ -11,9 +11,14 @@ class InternationalizationCore {
 
   static const Locale fallbackLocale = Locale('en', 'US');
   static late final String translationsPath;
+  static Locale? _startLocale;
 
-  static Future<void> init({required String translationsPath}) async {
+  static Future<void> init({
+    required String translationsPath,
+    Locale? startLocale,
+  }) async {
     InternationalizationCore.translationsPath = translationsPath;
+    _startLocale = startLocale;
     await EasyLocalization.ensureInitialized();
   }
 
@@ -22,6 +27,7 @@ class InternationalizationCore {
       supportedLocales: supportedLocales,
       path: translationsPath,
       fallbackLocale: fallbackLocale,
+      startLocale: _startLocale,
       child: child,
     );
   }

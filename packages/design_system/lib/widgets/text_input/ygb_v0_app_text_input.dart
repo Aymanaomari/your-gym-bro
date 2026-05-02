@@ -5,10 +5,11 @@ class YGBV0AppTextInput extends StatefulWidget {
   const YGBV0AppTextInput({
     super.key,
     required this.hintText,
+    required this.controller,
     this.prefixIcon,
     this.isError = false,
     this.onchange,
-    required this.controller,
+    this.keyboardType,
   });
 
   final String? hintText;
@@ -16,6 +17,7 @@ class YGBV0AppTextInput extends StatefulWidget {
   final bool? isError;
   final TextEditingController controller;
   final void Function(String)? onchange;
+  final TextInputType? keyboardType;
 
   @override
   State<YGBV0AppTextInput> createState() => _YgbV0AppTextInputState();
@@ -42,14 +44,14 @@ class _YgbV0AppTextInputState extends State<YGBV0AppTextInput> {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    final hintColor = theme.ygbColors.primary50.withAlpha(100);
+    final hintColor = theme.ygbColors.neutral500;
     final isError = widget.isError ?? false;
     final isFocused = _focusNode.hasFocus;
     final iconColor = isError
         ? theme.ygbColors.error
         : isFocused
         ? theme.ygbColors.primary500
-        : theme.ygbColors.primary50;
+        : theme.ygbColors.neutral400;
     final Widget? leadingIcon = widget.prefixIcon == null
         ? null
         : Padding(
@@ -65,6 +67,7 @@ class _YgbV0AppTextInputState extends State<YGBV0AppTextInput> {
       onChanged: widget.onchange,
       controller: widget.controller,
       style: TextStyle(color: theme.ygbColors.primary50),
+      keyboardType: widget.keyboardType,
       decoration: InputDecoration(
         isDense: true,
         contentPadding: EdgeInsets.symmetric(
@@ -72,6 +75,7 @@ class _YgbV0AppTextInputState extends State<YGBV0AppTextInput> {
           horizontal: theme.ygbSpacing.sm,
         ),
         prefixIcon: leadingIcon,
+
         prefixIconConstraints: BoxConstraints(
           minHeight: theme.ygbSpacing.lg,
           minWidth: theme.ygbSpacing.lg,
@@ -84,9 +88,7 @@ class _YgbV0AppTextInputState extends State<YGBV0AppTextInput> {
         ),
         enabledBorder: UnderlineInputBorder(
           borderSide: BorderSide(
-            color: isError
-                ? theme.ygbColors.error
-                : theme.ygbColors.primary50.withAlpha(100),
+            color: isError ? theme.ygbColors.error : theme.ygbColors.neutral400,
           ),
         ),
         focusedBorder: UnderlineInputBorder(

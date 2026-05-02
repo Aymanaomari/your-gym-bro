@@ -1,8 +1,8 @@
 import 'package:design_system/theme/ygb_v0_theme/ygb_v0_theme.dart';
 import 'package:flutter/material.dart';
 
-class YbgV0AppPasswordInput extends StatefulWidget {
-  const YbgV0AppPasswordInput({
+class YGBV0AppPasswordInput extends StatefulWidget {
+  const YGBV0AppPasswordInput({
     super.key,
     required this.hintText,
     this.prefixIcon,
@@ -18,10 +18,10 @@ class YbgV0AppPasswordInput extends StatefulWidget {
   final void Function(String)? onChange;
 
   @override
-  State<YbgV0AppPasswordInput> createState() => _YbgV0AppPasswordInputState();
+  State<YGBV0AppPasswordInput> createState() => _YGBV0AppPasswordInputState();
 }
 
-class _YbgV0AppPasswordInputState extends State<YbgV0AppPasswordInput> {
+class _YGBV0AppPasswordInputState extends State<YGBV0AppPasswordInput> {
   late final FocusNode _focusNode;
   bool _obscureText = true;
 
@@ -46,14 +46,14 @@ class _YbgV0AppPasswordInputState extends State<YbgV0AppPasswordInput> {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    final hintColor = theme.ygbColors.primary50.withAlpha(150);
+    final hintColor = theme.ygbColors.neutral500;
     final isError = widget.isError ?? false;
     final isFocused = _focusNode.hasFocus;
     final iconColor = isError
         ? theme.ygbColors.error
         : isFocused
         ? theme.ygbColors.primary500
-        : theme.ygbColors.primary50;
+        : theme.ygbColors.neutral400;
     final Widget? leadingIcon = widget.prefixIcon == null
         ? null
         : Padding(
@@ -67,6 +67,7 @@ class _YbgV0AppPasswordInputState extends State<YbgV0AppPasswordInput> {
     return TextField(
       onChanged: widget.onChange,
       focusNode: _focusNode,
+      controller: widget.controller,
       obscureText: _obscureText,
       style: TextStyle(color: theme.ygbColors.primary50),
       decoration: InputDecoration(
@@ -107,9 +108,7 @@ class _YbgV0AppPasswordInputState extends State<YbgV0AppPasswordInput> {
         ),
         enabledBorder: UnderlineInputBorder(
           borderSide: BorderSide(
-            color: isError
-                ? theme.ygbColors.error
-                : theme.ygbColors.primary50.withAlpha(100),
+            color: isError ? theme.ygbColors.error : theme.ygbColors.neutral400,
           ),
         ),
         focusedBorder: UnderlineInputBorder(

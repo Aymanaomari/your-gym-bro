@@ -68,7 +68,7 @@ class YgbV0SnackBar extends StatelessWidget {
               GestureDetector(
                 onTap: () =>
                     ScaffoldMessenger.of(context).hideCurrentSnackBar(),
-                child: Icon(Icons.close, color: color, size: 14),
+                child: Icon(Icons.close, color: color, size: 20),
               ),
             ],
           ),

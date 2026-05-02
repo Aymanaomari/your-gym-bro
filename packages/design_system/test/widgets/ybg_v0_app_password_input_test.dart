@@ -13,7 +13,7 @@ void main() {
     await tester.pumpWidget(
       _wrapWithTheme(
         theme,
-        YbgV0AppPasswordInput(
+        YGBV0AppPasswordInput(
           hintText: 'Password',
           prefixIcon: Icons.lock,
           controller: controller,
@@ -32,7 +32,7 @@ void main() {
     await tester.pumpWidget(
       _wrapWithTheme(
         theme,
-        YbgV0AppPasswordInput(
+        YGBV0AppPasswordInput(
           hintText: 'Password',
           prefixIcon: Icons.lock,
           controller: controller,
@@ -71,7 +71,7 @@ void main() {
     await tester.pumpWidget(
       _wrapWithTheme(
         theme,
-        YbgV0AppPasswordInput(
+        YGBV0AppPasswordInput(
           hintText: 'Password',
           prefixIcon: Icons.lock,
           controller: controller,
@@ -96,7 +96,7 @@ void main() {
     await tester.pumpWidget(
       _wrapWithTheme(
         theme,
-        YbgV0AppPasswordInput(hintText: 'Password', controller: controller),
+        YGBV0AppPasswordInput(hintText: 'Password', controller: controller),
       ),
     );
 
@@ -117,7 +117,7 @@ void main() {
     await tester.pumpWidget(
       _wrapWithTheme(
         theme,
-        YbgV0AppPasswordInput(
+        YGBV0AppPasswordInput(
           hintText: 'Password',
           prefixIcon: Icons.lock,
           controller: controller,
@@ -151,7 +151,7 @@ void main() {
     await tester.pumpWidget(
       _wrapWithTheme(
         theme,
-        YbgV0AppPasswordInput(
+        YGBV0AppPasswordInput(
           hintText: 'Password',
           prefixIcon: Icons.lock,
           controller: controller,
@@ -181,7 +181,7 @@ void main() {
     await tester.pumpWidget(
       _wrapWithTheme(
         theme,
-        YbgV0AppPasswordInput(hintText: 'Password', controller: controller),
+        YGBV0AppPasswordInput(hintText: 'Password', controller: controller),
       ),
     );
 
@@ -197,7 +197,7 @@ void main() {
     await tester.pumpWidget(
       _wrapWithTheme(
         theme,
-        YbgV0AppPasswordInput(
+        YGBV0AppPasswordInput(
           hintText: 'Enter your password',
           controller: controller,
         ),
@@ -215,7 +215,7 @@ void main() {
     await tester.pumpWidget(
       _wrapWithTheme(
         theme,
-        YbgV0AppPasswordInput(
+        YGBV0AppPasswordInput(
           hintText: 'Password',
           controller: controller,
           onChange: (value) => capturedValue = value,
@@ -234,7 +234,7 @@ void main() {
     await tester.pumpWidget(
       _wrapWithTheme(
         theme,
-        YbgV0AppPasswordInput(hintText: 'Password', controller: controller),
+        YGBV0AppPasswordInput(hintText: 'Password', controller: controller),
       ),
     );
 

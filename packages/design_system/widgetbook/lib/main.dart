@@ -20,6 +20,8 @@ class WidgetbookApp extends StatelessWidget {
     return Widgetbook.material(
       addons: [
         ViewportAddon(Viewports.all),
+        AlignmentAddon(),
+
         MaterialThemeAddon(
           themes: [
             WidgetbookTheme(

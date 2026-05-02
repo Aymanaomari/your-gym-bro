@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:widgetbook/widgetbook.dart';
 import 'package:widgetbook_annotation/widgetbook_annotation.dart' as widgetbook;
 
-@widgetbook.UseCase(name: 'App Link', type: YgbV0AppLink)
+@widgetbook.UseCase(name: 'App Link', type: YGBV0AppLink)
 Widget buildYgbV0AppLink(BuildContext context) {
   final type = context.knobs.object.dropdown(
     label: 'Link Type',
@@ -16,6 +16,14 @@ Widget buildYgbV0AppLink(BuildContext context) {
     description: "The style variant of the link.",
   );
 
+  final fontSize = context.knobs.doubleOrNull.slider(
+    label: 'Font Size',
+    initialValue: 14,
+    min: 10,
+    max: 30,
+    description: "The font size of the link text.",
+  );
+
   final isUnderlined = context.knobs.boolean(
     label: 'Underlined',
     initialValue: true,
@@ -23,11 +31,12 @@ Widget buildYgbV0AppLink(BuildContext context) {
   );
 
   return Center(
-    child: YgbV0AppLink(
+    child: YGBV0AppLink(
       type: type,
       text: 'Click me',
       onPressed: () {},
       isUnderlined: isUnderlined,
+      fontSize: fontSize,
     ),
   );
 }

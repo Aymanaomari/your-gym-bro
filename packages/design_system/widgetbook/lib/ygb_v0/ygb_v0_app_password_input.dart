@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:widgetbook/widgetbook.dart';
 import 'package:widgetbook_annotation/widgetbook_annotation.dart' as widgetbook;
 
-@widgetbook.UseCase(name: 'App Password Input', type: YbgV0AppPasswordInput)
-Widget buildYbgV0AppPasswordInput(BuildContext context) {
+@widgetbook.UseCase(name: 'App Password Input', type: YGBV0AppPasswordInput)
+Widget buildYGBV0AppPasswordInput(BuildContext context) {
   final hintText = context.knobs.string(
     label: 'Hint Text',
     initialValue: 'Enter your Password',
@@ -65,7 +65,7 @@ class _YbgV0PasswordInputUseCaseState
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: YbgV0AppPasswordInput(
+      child: YGBV0AppPasswordInput(
         hintText: widget.hintText,
         prefixIcon: widget.prefixIcon,
         isError: widget.isError,

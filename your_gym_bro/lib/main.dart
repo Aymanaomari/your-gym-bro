@@ -1,11 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:your_gym_bro/app/app_dependency_resolver.dart';
 import 'app/routing/go_router.dart';
 import 'package:ygb_sdk/ygb_sdk.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await initializeInternationalization(translationsPath: "assets/i18n");
+  await initializeInternationalization(
+    translationsPath: "assets/i18n",
+    startLocale: const Locale('en', 'US'),
+  );
+
+  await AppDependencyResolver.setup();
 
   runApp(localizationWrapper(child: const ProviderScope(child: MainApp())));
 }
