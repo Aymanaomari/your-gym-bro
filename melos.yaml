@@ -12,6 +12,11 @@ scripts:
   test:
     run: melos exec --dir-exists="test" -- flutter test
     description: Run unit tests in all packages that possess a test directory.
+
+commands:
+  bootstrap:
+    run: melos bootstrap
+    description: Install dependencies for all packages and link them together.
   
 
 

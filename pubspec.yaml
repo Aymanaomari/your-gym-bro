@@ -7,9 +7,23 @@ environment:
   sdk: ^3.10.7
 
 workspace: 
+  - packages/core/core
+  - packages/core/core_cache
+  - packages/core/core_internationalization
   - packages/ygb_sdk  
   - packages/design_system
+  - packages/modules/user_connection
+  - your_gym_bro
+
+
+dependencies: 
+  flutter:
+    sdk: flutter
+  flutter_svg: ^2.2.4
+  get_it: ^9.2.1
+
 
   
 dev_dependencies:
   melos: ^7.5.0
+

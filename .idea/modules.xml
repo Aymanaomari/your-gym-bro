@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<module fileurl="file://$PROJECT_DIR$/packages/core/core/melos_core.iml" filepath="$PROJECT_DIR$/packages/core/core/melos_core.iml"/>
+<module fileurl="file://$PROJECT_DIR$/packages/core/core_cache/melos_core_cache.iml" filepath="$PROJECT_DIR$/packages/core/core_cache/melos_core_cache.iml"/>
+<module fileurl="file://$PROJECT_DIR$/packages/core/core_internationalization/melos_core_internationalization.iml" filepath="$PROJECT_DIR$/packages/core/core_internationalization/melos_core_internationalization.iml"/>
 <module fileurl="file://$PROJECT_DIR$/packages/design_system/melos_design_system.iml" filepath="$PROJECT_DIR$/packages/design_system/melos_design_system.iml"/>
+<module fileurl="file://$PROJECT_DIR$/packages/modules/user_connection/melos_user_connection.iml" filepath="$PROJECT_DIR$/packages/modules/user_connection/melos_user_connection.iml"/>
 <module fileurl="file://$PROJECT_DIR$/packages/ygb_sdk/melos_ygb_sdk.iml" filepath="$PROJECT_DIR$/packages/ygb_sdk/melos_ygb_sdk.iml"/>
+<module fileurl="file://$PROJECT_DIR$/your_gym_bro/melos_your_gym_bro.iml" filepath="$PROJECT_DIR$/your_gym_bro/melos_your_gym_bro.iml"/>
 <module fileurl="file://$PROJECT_DIR$/melos_ygb.iml" filepath="$PROJECT_DIR$/melos_ygb.iml"/>
 <module fileurl="file://$PROJECT_DIR$/packages/core/melos_core.iml" filepath="$PROJECT_DIR$/packages/core/melos_core.iml"/>
     </modules>

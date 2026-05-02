@@ -1,4 +1,5 @@
 name: your_gym_bro
+resolution: workspace
 description: "A new Flutter project."
 publish_to: 'none'
 version: 0.1.0
@@ -11,12 +12,11 @@ dependencies:
     sdk: flutter
   go_router: ^17.1.0
   flutter_riverpod: ^3.2.1
-  easy_localization: ^3.0.8
   shared_preferences: ^2.5.4
   logging: ^1.3.0
   flutter_svg: ^2.2.4
-  ygb_sdk:
-    path: ../packages/ygb_sdk
+  ygb_sdk: ^1.0.0
+    
   
 
 
@@ -34,10 +34,7 @@ flutter:
   uses-material-design: true
   assets:
     - assets/images/bgs/
-    - assets/images/onboarding/
     - assets/i18n/
-    - assets/icons/
-
   fonts:
     - family: RushDriver
       fonts:
@@ -91,3 +88,4 @@ flutter:
           weight: 900
           style: italic
   
+

@@ -49,6 +49,54 @@ packages:
       url: "https://artifactory.dt.renault.com/artifactory/api/pub/pub-ccx-irn76318/"
     source: hosted
     version: "2.1.2"
+  build:
+    dependency: transitive
+    description:
+      name: build
+      sha256: a156715e7cd728130c592f30552575908aae5b100005fbc1f0fb16b3c03a3d10
+      url: "https://artifactory.dt.renault.com/artifactory/api/pub/pub-ccx-irn76318/"
+    source: hosted
+    version: "4.0.6"
+  build_config:
+    dependency: transitive
+    description:
+      name: build_config
+      sha256: "4070d2a59f8eec34c97c86ceb44403834899075f66e8a9d59706f8e7834f6f71"
+      url: "https://artifactory.dt.renault.com/artifactory/api/pub/pub-ccx-irn76318/"
+    source: hosted
+    version: "1.3.0"
+  build_daemon:
+    dependency: transitive
+    description:
+      name: build_daemon
+      sha256: bf05f6e12cfea92d3c09308d7bcdab1906cd8a179b023269eed00c071004b957
+      url: "https://artifactory.dt.renault.com/artifactory/api/pub/pub-ccx-irn76318/"
+    source: hosted
+    version: "4.1.1"
+  build_runner:
+    dependency: transitive
+    description:
+      name: build_runner
+      sha256: "1523ce62448ebac2c15a8ba5fbad8acac169788658a7dd2a1c2d9c2a9318b9a6"
+      url: "https://artifactory.dt.renault.com/artifactory/api/pub/pub-ccx-irn76318/"
+    source: hosted
+    version: "2.15.0"
+  built_collection:
+    dependency: transitive
+    description:
+      name: built_collection
+      sha256: "376e3dd27b51ea877c28d525560790aee2e6fbb5f20e2f85d5081027d94e2100"
+      url: "https://artifactory.dt.renault.com/artifactory/api/pub/pub-ccx-irn76318/"
+    source: hosted
+    version: "5.1.1"
+  built_value:
+    dependency: transitive
+    description:
+      name: built_value
+      sha256: "34e4067d30ce212937df995f03b69992eea683539ceeac7f679a1f1eba055b56"
+      url: "https://artifactory.dt.renault.com/artifactory/api/pub/pub-ccx-irn76318/"
+    source: hosted
+    version: "8.12.6"
   characters:
     dependency: transitive
     description:
@@ -105,6 +153,14 @@ packages:
       url: "https://artifactory.dt.renault.com/artifactory/api/pub/pub-ccx-irn76318/"
     source: hosted
     version: "1.1.2"
+  code_builder:
+    dependency: transitive
+    description:
+      name: code_builder
+      sha256: "6a6cab2ba4680d6423f34a9b972a4c9a94ebe1b62ecec4e1a1f2cba91fd1319d"
+      url: "https://artifactory.dt.renault.com/artifactory/api/pub/pub-ccx-irn76318/"
+    source: hosted
+    version: "4.11.1"
   collection:
     dependency: transitive
     description:
@@ -145,6 +201,30 @@ packages:
       url: "https://artifactory.dt.renault.com/artifactory/api/pub/pub-ccx-irn76318/"
     source: hosted
     version: "3.0.7"
+  dart_style:
+    dependency: transitive
+    description:
+      name: dart_style
+      sha256: a9c30492da18ff84efe2422ba2d319a89942d93e58eb0b73d32abe822ef54b7b
+      url: "https://artifactory.dt.renault.com/artifactory/api/pub/pub-ccx-irn76318/"
+    source: hosted
+    version: "3.1.3"
+  easy_localization:
+    dependency: transitive
+    description:
+      name: easy_localization
+      sha256: "2ccdf9db8fe4d9c5a75c122e6275674508fd0f0d49c827354967b8afcc56bbed"
+      url: "https://artifactory.dt.renault.com/artifactory/api/pub/pub-ccx-irn76318/"
+    source: hosted
+    version: "3.0.8"
+  easy_logger:
+    dependency: transitive
+    description:
+      name: easy_logger
+      sha256: c764a6e024846f33405a2342caf91c62e357c24b02c04dbc712ef232bf30ffb7
+      url: "https://artifactory.dt.renault.com/artifactory/api/pub/pub-ccx-irn76318/"
+    source: hosted
+    version: "0.0.2"
   fake_async:
     dependency: transitive
     description:
@@ -153,6 +233,14 @@ packages:
       url: "https://artifactory.dt.renault.com/artifactory/api/pub/pub-ccx-irn76318/"
     source: hosted
     version: "1.3.3"
+  ffi:
+    dependency: transitive
+    description:
+      name: ffi
+      sha256: "6d7fd89431262d8f3125e81b50d3847a091d846eafcd4fdb88dd06f36d705a45"
+      url: "https://artifactory.dt.renault.com/artifactory/api/pub/pub-ccx-irn76318/"
+    source: hosted
+    version: "2.2.0"
   file:
     dependency: transitive
     description:
@@ -161,8 +249,16 @@ packages:
       url: "https://artifactory.dt.renault.com/artifactory/api/pub/pub-ccx-irn76318/"
     source: hosted
     version: "7.0.1"
-  flutter:
+  fixnum:
     dependency: transitive
+    description:
+      name: fixnum
+      sha256: b6dc7065e46c974bc7c5f143080a6764ec7a4be6da1285ececdc37be96de53be
+      url: "https://artifactory.dt.renault.com/artifactory/api/pub/pub-ccx-irn76318/"
+    source: hosted
+    version: "1.1.1"
+  flutter:
+    dependency: "direct main"
     description: flutter
     source: sdk
     version: "0.0.0"
@@ -174,7 +270,33 @@ packages:
       url: "https://artifactory.dt.renault.com/artifactory/api/pub/pub-ccx-irn76318/"
     source: hosted
     version: "6.0.0"
+  flutter_localizations:
+    dependency: transitive
+    description: flutter
+    source: sdk
+    version: "0.0.0"
+  flutter_riverpod:
+    dependency: transitive
+    description:
+      name: flutter_riverpod
+      sha256: "4e166be88e1dbbaa34a280bdb744aeae73b7ef25fdf8db7a3bb776760a3648e2"
+      url: "https://artifactory.dt.renault.com/artifactory/api/pub/pub-ccx-irn76318/"
+    source: hosted
+    version: "3.3.1"
+  flutter_svg:
+    dependency: "direct main"
+    description:
+      name: flutter_svg
+      sha256: "1ded017b39c8e15c8948ea855070a5ff8ff8b3d5e83f3446e02d6bb12add7ad9"
+      url: "https://artifactory.dt.renault.com/artifactory/api/pub/pub-ccx-irn76318/"
+    source: hosted
+    version: "2.2.4"
   flutter_test:
+    dependency: transitive
+    description: flutter
+    source: sdk
+    version: "0.0.0"
+  flutter_web_plugins:
     dependency: transitive
     description: flutter
     source: sdk
@@ -187,6 +309,14 @@ packages:
       url: "https://artifactory.dt.renault.com/artifactory/api/pub/pub-ccx-irn76318/"
     source: hosted
     version: "4.0.0"
+  get_it:
+    dependency: "direct main"
+    description:
+      name: get_it
+      sha256: "568d62f0e68666fb5d95519743b3c24a34c7f19d834b0658c46e26d778461f66"
+      url: "https://artifactory.dt.renault.com/artifactory/api/pub/pub-ccx-irn76318/"
+    source: hosted
+    version: "9.2.1"
   glob:
     dependency: transitive
     description:
@@ -195,6 +325,14 @@ packages:
       url: "https://artifactory.dt.renault.com/artifactory/api/pub/pub-ccx-irn76318/"
     source: hosted
     version: "2.1.3"
+  go_router:
+    dependency: transitive
+    description:
+      name: go_router
+      sha256: "92d8cee7c57dff0a6c409c05597b460002434eccf7424a712283225b3962d03f"
+      url: "https://artifactory.dt.renault.com/artifactory/api/pub/pub-ccx-irn76318/"
+    source: hosted
+    version: "17.2.3"
   graphs:
     dependency: transitive
     description:
@@ -227,6 +365,14 @@ packages:
       url: "https://artifactory.dt.renault.com/artifactory/api/pub/pub-ccx-irn76318/"
     source: hosted
     version: "4.1.2"
+  intl:
+    dependency: transitive
+    description:
+      name: intl
+      sha256: "3df61194eb431efc39c4ceba583b95633a403f46c9fd341e550ce0bfa50e9aa5"
+      url: "https://artifactory.dt.renault.com/artifactory/api/pub/pub-ccx-irn76318/"
+    source: hosted
+    version: "0.20.2"
   io:
     dependency: transitive
     description:
@@ -311,10 +457,10 @@ packages:
     dependency: "direct dev"
     description:
       name: melos
-      sha256: "72942b70e2fad1f01b2d66b42696546f9f48f57c342bee61726c540e8bfdcb02"
+      sha256: "2f7381d209ab7554203c51481a6a57c7896593b7f06190a06a467aa5bfd693c5"
       url: "https://artifactory.dt.renault.com/artifactory/api/pub/pub-ccx-irn76318/"
     source: hosted
-    version: "7.5.0"
+    version: "7.5.1"
   meta:
     dependency: transitive
     description:
@@ -331,6 +477,14 @@ packages:
       url: "https://artifactory.dt.renault.com/artifactory/api/pub/pub-ccx-irn76318/"
     source: hosted
     version: "2.0.0"
+  mockito:
+    dependency: transitive
+    description:
+      name: mockito
+      sha256: eff30d002f0c8bf073b6f929df4483b543133fcafce056870163587b03f1d422
+      url: "https://artifactory.dt.renault.com/artifactory/api/pub/pub-ccx-irn76318/"
+    source: hosted
+    version: "5.6.4"
   mustache_template:
     dependency: transitive
     description:
@@ -339,6 +493,14 @@ packages:
       url: "https://artifactory.dt.renault.com/artifactory/api/pub/pub-ccx-irn76318/"
     source: hosted
     version: "2.0.4"
+  nested:
+    dependency: transitive
+    description:
+      name: nested
+      sha256: "03bac4c528c64c95c722ec99280375a6f2fc708eec17c7b3f07253b626cd2a20"
+      url: "https://artifactory.dt.renault.com/artifactory/api/pub/pub-ccx-irn76318/"
+    source: hosted
+    version: "1.0.0"
   node_preamble:
     dependency: transitive
     description:
@@ -363,6 +525,38 @@ packages:
       url: "https://artifactory.dt.renault.com/artifactory/api/pub/pub-ccx-irn76318/"
     source: hosted
     version: "1.9.1"
+  path_parsing:
+    dependency: transitive
+    description:
+      name: path_parsing
+      sha256: "883402936929eac138ee0a45da5b0f2c80f89913e6dc3bf77eb65b84b409c6ca"
+      url: "https://artifactory.dt.renault.com/artifactory/api/pub/pub-ccx-irn76318/"
+    source: hosted
+    version: "1.1.0"
+  path_provider_linux:
+    dependency: transitive
+    description:
+      name: path_provider_linux
+      sha256: f7a1fe3a634fe7734c8d3f2766ad746ae2a2884abe22e241a8b301bf5cac3279
+      url: "https://artifactory.dt.renault.com/artifactory/api/pub/pub-ccx-irn76318/"
+    source: hosted
+    version: "2.2.1"
+  path_provider_platform_interface:
+    dependency: transitive
+    description:
+      name: path_provider_platform_interface
+      sha256: "88f5779f72ba699763fa3a3b06aa4bf6de76c8e5de842cf6f29e2e06476c2334"
+      url: "https://artifactory.dt.renault.com/artifactory/api/pub/pub-ccx-irn76318/"
+    source: hosted
+    version: "2.1.2"
+  path_provider_windows:
+    dependency: transitive
+    description:
+      name: path_provider_windows
+      sha256: bd6f00dbd873bfb70d0761682da2b3a2c2fccc2b9e84c495821639601d81afe7
+      url: "https://artifactory.dt.renault.com/artifactory/api/pub/pub-ccx-irn76318/"
+    source: hosted
+    version: "2.3.0"
   petitparser:
     dependency: transitive
     description:
@@ -387,6 +581,14 @@ packages:
       url: "https://artifactory.dt.renault.com/artifactory/api/pub/pub-ccx-irn76318/"
     source: hosted
     version: "3.1.6"
+  plugin_platform_interface:
+    dependency: transitive
+    description:
+      name: plugin_platform_interface
+      sha256: "4820fbfdb9478b1ebae27888254d445073732dae3d6ea81f0b7e06d5dedc3f02"
+      url: "https://artifactory.dt.renault.com/artifactory/api/pub/pub-ccx-irn76318/"
+    source: hosted
+    version: "2.1.8"
   pool:
     dependency: transitive
     description:
@@ -411,6 +613,14 @@ packages:
       url: "https://artifactory.dt.renault.com/artifactory/api/pub/pub-ccx-irn76318/"
     source: hosted
     version: "2.0.0"
+  provider:
+    dependency: transitive
+    description:
+      name: provider
+      sha256: "4e82183fa20e5ca25703ead7e05de9e4cceed1fbd1eadc1ac3cb6f565a09f272"
+      url: "https://artifactory.dt.renault.com/artifactory/api/pub/pub-ccx-irn76318/"
+    source: hosted
+    version: "6.1.5+1"
   pub_semver:
     dependency: transitive
     description:
@@ -435,6 +645,70 @@ packages:
       url: "https://artifactory.dt.renault.com/artifactory/api/pub/pub-ccx-irn76318/"
     source: hosted
     version: "1.5.0"
+  riverpod:
+    dependency: transitive
+    description:
+      name: riverpod
+      sha256: "8c22216be8ad3ef2b44af3a329693558c98eca7b8bd4ef495c92db0bba279f83"
+      url: "https://artifactory.dt.renault.com/artifactory/api/pub/pub-ccx-irn76318/"
+    source: hosted
+    version: "3.2.1"
+  shared_preferences:
+    dependency: transitive
+    description:
+      name: shared_preferences
+      sha256: c3025c5534b01739267eb7d76959bbc25a6d10f6988e1c2a3036940133dd10bf
+      url: "https://artifactory.dt.renault.com/artifactory/api/pub/pub-ccx-irn76318/"
+    source: hosted
+    version: "2.5.5"
+  shared_preferences_android:
+    dependency: transitive
+    description:
+      name: shared_preferences_android
+      sha256: e8d4762b1e2e8578fc4d0fd548cebf24afd24f49719c08974df92834565e2c53
+      url: "https://artifactory.dt.renault.com/artifactory/api/pub/pub-ccx-irn76318/"
+    source: hosted
+    version: "2.4.23"
+  shared_preferences_foundation:
+    dependency: transitive
+    description:
+      name: shared_preferences_foundation
+      sha256: "4e7eaffc2b17ba398759f1151415869a34771ba11ebbccd1b0145472a619a64f"
+      url: "https://artifactory.dt.renault.com/artifactory/api/pub/pub-ccx-irn76318/"
+    source: hosted
+    version: "2.5.6"
+  shared_preferences_linux:
+    dependency: transitive
+    description:
+      name: shared_preferences_linux
+      sha256: "580abfd40f415611503cae30adf626e6656dfb2f0cee8f465ece7b6defb40f2f"
+      url: "https://artifactory.dt.renault.com/artifactory/api/pub/pub-ccx-irn76318/"
+    source: hosted
+    version: "2.4.1"
+  shared_preferences_platform_interface:
+    dependency: transitive
+    description:
+      name: shared_preferences_platform_interface
+      sha256: "649dc798a33931919ea356c4305c2d1f81619ea6e92244070b520187b5140ef9"
+      url: "https://artifactory.dt.renault.com/artifactory/api/pub/pub-ccx-irn76318/"
+    source: hosted
+    version: "2.4.2"
+  shared_preferences_web:
+    dependency: transitive
+    description:
+      name: shared_preferences_web
+      sha256: c49bd060261c9a3f0ff445892695d6212ff603ef3115edbb448509d407600019
+      url: "https://artifactory.dt.renault.com/artifactory/api/pub/pub-ccx-irn76318/"
+    source: hosted
+    version: "2.4.3"
+  shared_preferences_windows:
+    dependency: transitive
+    description:
+      name: shared_preferences_windows
+      sha256: "94ef0f72b2d71bc3e700e025db3710911bd51a71cefb65cc609dd0d9a982e3c1"
+      url: "https://artifactory.dt.renault.com/artifactory/api/pub/pub-ccx-irn76318/"
+    source: hosted
+    version: "2.4.1"
   shelf:
     dependency: transitive
     description:
@@ -472,6 +746,14 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  source_gen:
+    dependency: transitive
+    description:
+      name: source_gen
+      sha256: ec37cc0e6694374cbef59ed79685572c870a54ede6fa30a3e420feb3adffea02
+      url: "https://artifactory.dt.renault.com/artifactory/api/pub/pub-ccx-irn76318/"
+    source: hosted
+    version: "4.2.3"
   source_map_stack_trace:
     dependency: transitive
     description:
@@ -504,6 +786,14 @@ packages:
       url: "https://artifactory.dt.renault.com/artifactory/api/pub/pub-ccx-irn76318/"
     source: hosted
     version: "1.12.1"
+  state_notifier:
+    dependency: transitive
+    description:
+      name: state_notifier
+      sha256: b8677376aa54f2d7c58280d5a007f9e8774f1968d1fb1c096adcb4792fba29bb
+      url: "https://artifactory.dt.renault.com/artifactory/api/pub/pub-ccx-irn76318/"
+    source: hosted
+    version: "1.0.0"
   stream_channel:
     dependency: transitive
     description:
@@ -512,6 +802,14 @@ packages:
       url: "https://artifactory.dt.renault.com/artifactory/api/pub/pub-ccx-irn76318/"
     source: hosted
     version: "2.1.4"
+  stream_transform:
+    dependency: transitive
+    description:
+      name: stream_transform
+      sha256: ad47125e588cfd37a9a7f86c7d6356dde8dfe89d071d293f80ca9e9273a33871
+      url: "https://artifactory.dt.renault.com/artifactory/api/pub/pub-ccx-irn76318/"
+    source: hosted
+    version: "2.1.1"
   string_scanner:
     dependency: transitive
     description:
@@ -560,6 +858,30 @@ packages:
       url: "https://artifactory.dt.renault.com/artifactory/api/pub/pub-ccx-irn76318/"
     source: hosted
     version: "1.4.0"
+  vector_graphics:
+    dependency: transitive
+    description:
+      name: vector_graphics
+      sha256: "6409a25046024f0f8c5d8a59fec314081e81f9d436b66ca4015a8b49772bf445"
+      url: "https://artifactory.dt.renault.com/artifactory/api/pub/pub-ccx-irn76318/"
+    source: hosted
+    version: "1.2.0"
+  vector_graphics_codec:
+    dependency: transitive
+    description:
+      name: vector_graphics_codec
+      sha256: "99fd9fbd34d9f9a32efd7b6a6aae14125d8237b10403b422a6a6dfeac2806146"
+      url: "https://artifactory.dt.renault.com/artifactory/api/pub/pub-ccx-irn76318/"
+    source: hosted
+    version: "1.1.13"
+  vector_graphics_compiler:
+    dependency: transitive
+    description:
+      name: vector_graphics_compiler
+      sha256: "5a88dd14c0954a5398af544651c7fb51b457a2a556949bfb25369b210ef73a74"
+      url: "https://artifactory.dt.renault.com/artifactory/api/pub/pub-ccx-irn76318/"
+    source: hosted
+    version: "1.2.0"
   vector_math:
     dependency: transitive
     description:
@@ -572,10 +894,10 @@ packages:
     dependency: transitive
     description:
       name: vm_service
-      sha256: "45caa6c5917fa127b5dbcfbd1fa60b14e583afdc08bfc96dda38886ca252eb60"
+      sha256: "0016aef94fc66495ac78af5859181e3f3bf2026bd8eecc72b9565601e19ab360"
       url: "https://artifactory.dt.renault.com/artifactory/api/pub/pub-ccx-irn76318/"
     source: hosted
-    version: "15.0.2"
+    version: "15.2.0"
   watcher:
     dependency: transitive
     description:
@@ -616,6 +938,14 @@ packages:
       url: "https://artifactory.dt.renault.com/artifactory/api/pub/pub-ccx-irn76318/"
     source: hosted
     version: "1.2.1"
+  xdg_directories:
+    dependency: transitive
+    description:
+      name: xdg_directories
+      sha256: "7a3f37b05d989967cdddcbb571f1ea834867ae2faa29725fd085180e0883aa15"
+      url: "https://artifactory.dt.renault.com/artifactory/api/pub/pub-ccx-irn76318/"
+    source: hosted
+    version: "1.1.0"
   xml:
     dependency: transitive
     description:
@@ -642,4 +972,4 @@ packages:
     version: "2.2.4"
 sdks:
   dart: ">=3.10.7 <4.0.0"
-  flutter: ">=3.18.0-18.0.pre.54"
+  flutter: ">=3.35.0"

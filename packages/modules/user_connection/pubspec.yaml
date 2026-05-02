@@ -1,0 +1,31 @@
+name: user_connection
+resolution: workspace
+description: "A new Flutter package project."
+version: 0.0.1
+homepage:
+
+environment:
+  sdk: ^3.10.7
+  flutter: ">=1.17.0"
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^6.1.5+1
+  core: ^0.0.1
+  design_system: ^0.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter: 
+  assets:
+    - assets/images/onboarding/onboarding-bg-1.png
+    - assets/images/onboarding/onboarding-bg-2.png

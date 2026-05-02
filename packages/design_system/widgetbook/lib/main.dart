@@ -28,8 +28,15 @@ class WidgetbookApp extends StatelessWidget {
                 scaffoldBackgroundColor: Color(0XFF000000),
               ),
             ),
+            WidgetbookTheme(
+              name: 'Dark',
+              data: YGBV0ThemeDark().themeData.copyWith(
+                scaffoldBackgroundColor: Color(0XFF000000),
+              ),
+            ),
           ],
         ),
+        ZoomAddon(),
       ],
       // The [directories] variable does not exist yet,
       // it will be generated in the next step

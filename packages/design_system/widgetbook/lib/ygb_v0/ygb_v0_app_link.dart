@@ -7,7 +7,12 @@ import 'package:widgetbook_annotation/widgetbook_annotation.dart' as widgetbook;
 Widget buildYgbV0AppLink(BuildContext context) {
   final type = context.knobs.object.dropdown(
     label: 'Link Type',
-    options: LinkStyleVariant.values,
+    labelBuilder: (value) => value.name,
+    options: [
+      LinkStyleVariant.primary,
+      LinkStyleVariant.secondary,
+      LinkStyleVariant.danger,
+    ],
     description: "The style variant of the link.",
   );
 

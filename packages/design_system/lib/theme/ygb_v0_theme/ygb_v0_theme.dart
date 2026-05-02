@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+export 'ygb_v0_theme_dark.dart';
 import 'ygb_v0_color_theme.dart';
 import 'ygb_v0_radius_theme.dart';
 import 'ygb_v0_spacing_theme.dart';
@@ -8,7 +9,7 @@ class YGBV0ThemeLight {
   ThemeData get themeData {
     return ThemeData(
       useMaterial3: true,
-      scaffoldBackgroundColor: const Color(0xFF164264),
+      scaffoldBackgroundColor: const Color(0xFF041320),
       textTheme: YgbV0TextTheme().textTheme,
       textSelectionTheme: const TextSelectionThemeData(
         cursorColor: Color(0xFF2493D7),

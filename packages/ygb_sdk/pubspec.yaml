@@ -10,8 +10,12 @@ environment:
 
 # Add regular dependencies here.
 dependencies:
-  design_system:
-    path: ../design_system
+  design_system: ^0.0.1
+  core: ^0.0.1
+  user_connection: ^0.0.1
+  
+
+  
 
 
 dev_dependencies:

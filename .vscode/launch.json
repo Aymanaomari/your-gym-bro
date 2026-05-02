@@ -1,0 +1,171 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "ygb",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "ygb (profile mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "ygb (release mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "your_gym_bro",
+            "cwd": "your_gym_bro",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "your_gym_bro (profile mode)",
+            "cwd": "your_gym_bro",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "your_gym_bro (release mode)",
+            "cwd": "your_gym_bro",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "design_system",
+            "cwd": "packages/design_system",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "design_system (profile mode)",
+            "cwd": "packages/design_system",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "design_system (release mode)",
+            "cwd": "packages/design_system",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "ygb_sdk",
+            "cwd": "packages/ygb_sdk",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "core",
+            "cwd": "packages/core/core",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "core (profile mode)",
+            "cwd": "packages/core/core",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "core (release mode)",
+            "cwd": "packages/core/core",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "core_cache",
+            "cwd": "packages/core/core_cache",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "core_cache (profile mode)",
+            "cwd": "packages/core/core_cache",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "core_cache (release mode)",
+            "cwd": "packages/core/core_cache",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "core_internationalization",
+            "cwd": "packages/core/core_internationalization",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "core_internationalization (profile mode)",
+            "cwd": "packages/core/core_internationalization",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "core_internationalization (release mode)",
+            "cwd": "packages/core/core_internationalization",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "widgetbook",
+            "cwd": "packages/design_system/widgetbook",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "widgetbook (profile mode)",
+            "cwd": "packages/design_system/widgetbook",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "widgetbook (release mode)",
+            "cwd": "packages/design_system/widgetbook",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "user_connection",
+            "cwd": "packages/modules/user_connection",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "user_connection (profile mode)",
+            "cwd": "packages/modules/user_connection",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "user_connection (release mode)",
+            "cwd": "packages/modules/user_connection",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}
