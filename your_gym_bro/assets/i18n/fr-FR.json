@@ -40,5 +40,11 @@
     "SIGN_UP_BUTTON": "S'INSCRIRE",
     "SIGN_UP_OR_CONTINUE_WITH": "OU S'INSCRIRE AVEC",
     "SIGN_UP_HAVE_ACCOUNT": "Vous avez déjà un compte ?",
-    "SIGN_UP_SIGN_IN": "Se connecter"
+    "SIGN_UP_SIGN_IN": "Se connecter",
+    "RESET_PASSWORD_TITLE": "Réinitialiser le mot de passe",
+    "RESET_PASSWORD_SUBTITLE": "Définissez un nouveau mot de passe pour sécuriser votre compte.",
+    "PASSWORD_HINT": "Mot de passe",
+    "CONFIRM_PASSWORD_HINT": "Confirmer le mot de passe",
+    "RESET_PASSWORD": "Réinitialiser le mot de passe",
+    "RESEND_IT": "Le renvoyer"
 }

@@ -800,6 +800,12 @@
       "languageVersion": "3.10"
     },
     {
+      "name": "core_logger",
+      "rootUri": "../packages/core/core_logger",
+      "packageUri": "lib/",
+      "languageVersion": "3.10"
+    },
+    {
       "name": "core_di",
       "rootUri": "../packages/core/core_di",
       "packageUri": "lib/",
@@ -820,6 +826,12 @@
     {
       "name": "user_connection",
       "rootUri": "../packages/modules/user_connection",
+      "packageUri": "lib/",
+      "languageVersion": "3.10"
+    },
+    {
+      "name": "base_module",
+      "rootUri": "../packages/modules/base_module",
       "packageUri": "lib/",
       "languageVersion": "3.10"
     },

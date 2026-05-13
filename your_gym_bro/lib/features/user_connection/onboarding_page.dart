@@ -15,10 +15,12 @@ class OnboardingPage extends StatefulWidget {
 class _OnboardingPageState extends State<OnboardingPage> {
   @override
   Widget build(BuildContext context) {
-    return OnboardingFactory().onboardingPage(
-      onCompleted: (_) {
-        context.goNamed(SigninPage.routeName);
-      },
+    return Scaffold(
+      body: OnboardingFactory().onboardingPage(
+        onCompleted: (_) {
+          context.goNamed(SigninPage.routeName);
+        },
+      ),
     );
   }
 }

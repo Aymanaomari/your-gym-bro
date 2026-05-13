@@ -29,7 +29,19 @@
             "name": "widgetbook",
             "cwd": "packages/design_system/widgetbook",
             "request": "launch",
-            "type": "dart",
+            "type": "dart"
+        },
+        {
+            "name": "melos bootstrap",
+            "command": "melos bootstrap",
+            "request": "launch",
+            "type": "node-terminal"
+        },
+        {
+            "name": "melos test",
+            "command": "melos test",
+            "request": "launch",
+            "type": "node-terminal"
         }
     ]
 }

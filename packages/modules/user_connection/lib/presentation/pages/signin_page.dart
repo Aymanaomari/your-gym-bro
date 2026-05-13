@@ -1,3 +1,4 @@
+import 'package:base_module/presentation/snackbar_mixin.dart';
 import 'package:core/main.dart';
 import 'package:design_system/design_system.dart';
 import 'package:design_system/widgets/snack_bar/ygb_v0_snack_bar.dart';
@@ -21,36 +22,19 @@ class SigninPage extends StatefulWidget {
   State<SigninPage> createState() => _SigninPageState();
 }
 
-class _SigninPageState extends State<SigninPage> {
+class _SigninPageState extends State<SigninPage> with SnackbarMixin {
   late final SigninViewModel _viewModel;
+  late void Function() _showErrorSnackBar;
 
   @override
   void initState() {
     super.initState();
     _viewModel = CoreDIResolver.getInstance().resolve<SigninViewModel>();
+    _showErrorSnackBar = () => showErrorSnackbar(
+      context,
+      message: _viewModel.errorMessage.value ?? '',
+    );
     _viewModel.errorMessage.addListener(_showErrorSnackBar);
-  }
-
-  void _showErrorSnackBar() {
-    final errorMessage = _viewModel.errorMessage.value;
-    if (!mounted || errorMessage == null) {
-      return;
-    }
-
-    final messenger = ScaffoldMessenger.of(context);
-    messenger
-      ..hideCurrentSnackBar()
-      ..showSnackBar(
-        SnackBar(
-          content: YgbV0SnackBar(
-            message: errorMessage,
-            type: SnackBarType.error,
-          ),
-          backgroundColor: Colors.transparent,
-          elevation: 0,
-          behavior: SnackBarBehavior.floating,
-        ),
-      );
   }
 
   @override

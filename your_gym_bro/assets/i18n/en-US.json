@@ -40,5 +40,11 @@
     "SIGN_UP_BUTTON": "SIGN UP",
     "SIGN_UP_OR_CONTINUE_WITH": "OR SIGN UP WITH",
     "SIGN_UP_HAVE_ACCOUNT": "Already have an account?",
-    "SIGN_UP_SIGN_IN": "Sign In"
+    "SIGN_UP_SIGN_IN": "Sign In",
+    "RESET_PASSWORD_TITLE": "Reset Password",
+    "RESET_PASSWORD_SUBTITLE": "Set a new password to secure your account.",
+    "PASSWORD_HINT": "Password",
+    "CONFIRM_PASSWORD_HINT": "Confirm Password",
+    "RESET_PASSWORD": "Reset Password",
+    "RESEND_IT": "Resend it"
 }

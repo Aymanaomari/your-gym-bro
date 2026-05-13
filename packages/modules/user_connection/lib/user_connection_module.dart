@@ -6,6 +6,7 @@ import 'package:user_connection/domain/usecases/is_onboarding_completed.dart';
 import 'package:user_connection/domain/usecases/mark_onboarding_completed.dart';
 import 'package:user_connection/presentation/viewmodel/forgot_password_viewmodel.dart';
 import 'package:user_connection/presentation/viewmodel/onboarding_view_model.dart';
+import 'package:user_connection/presentation/viewmodel/reset_password_viewmodel.dart';
 import 'package:user_connection/presentation/viewmodel/signin_view_model.dart';
 
 class UserConnectionModule {
@@ -45,17 +46,17 @@ class UserConnectionModule {
     );
 
     // View model (inject use cases)
-    di.registerFactory<OnboardingViewModel>(
+    di.registerLazySingleton<OnboardingViewModel>(
       () => OnboardingViewModel(
         isOnboardingCompletedUseCase: di.resolve<IsOnboardingCompleted>(),
         markOnboardingAsCompletedUseCase: di
             .resolve<MarkOnboardingAsCompleted>(),
       ),
     );
-
     di.registerFactory<SigninViewModel>(() => SigninViewModel());
     di.registerFactory<ForgotPasswordViewmodel>(
       () => ForgotPasswordViewmodel(),
     );
+    di.registerFactory<ResetPasswordViewmodel>(() => ResetPasswordViewmodel());
   }
 }

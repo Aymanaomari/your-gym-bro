@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:user_connection/presentation/pages/forgot_pasword_page.dart';
 import 'package:user_connection/presentation/pages/otp_page.dart';
+import 'package:user_connection/presentation/pages/reset_password_page.dart';
 import 'package:user_connection/presentation/pages/signin_page.dart';
 import 'package:user_connection/presentation/pages/signup_page.dart';
 
@@ -31,5 +32,9 @@ class UserConnectionFactory {
 
   Widget otpPage({String? userEmail, void Function()? onBackPressed}) {
     return OtpPage(userEmail: userEmail, onBackPressed: onBackPressed);
+  }
+
+  Widget resetPasswordPage({void Function()? onBackPressed}) {
+    return ResetPasswordPage(onBackPressed: onBackPressed);
   }
 }

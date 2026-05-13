@@ -5,6 +5,7 @@ import 'package:your_gym_bro/app/routing/routing_animations.dart';
 import 'package:your_gym_bro/features/user_connection/forgot_password_page.dart';
 import 'package:your_gym_bro/features/user_connection/onboarding_page.dart';
 import 'package:your_gym_bro/features/user_connection/otp_page.dart';
+import 'package:your_gym_bro/features/user_connection/reset_password_page.dart';
 import 'package:your_gym_bro/features/user_connection/signin_page.dart';
 import 'package:your_gym_bro/features/user_connection/signup_page.dart';
 import 'package:your_gym_bro/features/user_connection/splash_page.dart';
@@ -52,5 +53,12 @@ final userConnectionRoute = [
     name: OtpPage.routeName,
     builder: (context, state) =>
         OtpPage(userEmail: state.uri.queryParameters["email"]),
+  ),
+  GoRoute(
+    path: ResetPasswordPage.routePath,
+    name: ResetPasswordPage.routeName,
+    builder: (context, state) {
+      return const ResetPasswordPage();
+    },
   ),
 ];

@@ -19,6 +19,10 @@ class InternationalizationCore {
   }) async {
     InternationalizationCore.translationsPath = translationsPath;
     _startLocale = startLocale;
+
+    // Initialize EasyLocalization with logging disabled
+    EasyLocalization.logger.enableLevels = [];
+
     await EasyLocalization.ensureInitialized();
   }
 
@@ -28,6 +32,8 @@ class InternationalizationCore {
       path: translationsPath,
       fallbackLocale: fallbackLocale,
       startLocale: _startLocale,
+      useFallbackTranslationsForEmptyResources: true,
+      useOnlyLangCode: false,
       child: child,
     );
   }
